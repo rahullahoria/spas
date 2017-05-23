@@ -18,8 +18,8 @@ function createAds(){
     }
 
     $sqlUpdateStatus = "INSERT INTO `ads`
-      (`vedio_id`, `gender`, `age_lower`, `age_higher`,`area`,`city`,`km`, `creation`,`status`) VALUES
-      (:videoId,:gender,:ageLower,:ageHigher, :area, :city, :km, :creation,:status)
+      (`title`, vedio_id`, `gender`, `age_lower`, `age_higher`,`area`,`city`,`km`, `creation`,`status`) VALUES
+      (:title, :videoId,:gender,:ageLower,:ageHigher, :area, :city, :km, :creation,:status)
 ";
 
     try {
@@ -28,6 +28,7 @@ function createAds(){
         $stmt = $db->prepare($sqlUpdateStatus);
 
         $status = "active";
+        $stmt->bindParam("title", $ads->title);
         $stmt->bindParam("videoId", $ads->video_id);
         $stmt->bindParam("gender", $ads->gender);
         $stmt->bindParam("ageLower", $ads->age_lower);

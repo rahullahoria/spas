@@ -40,9 +40,9 @@
 
         ///channel/sms/:mobile/text/:text
 
-        function GetStatus(type) {
+        function GetStatus() {
             return $http
-                .get('http://api.spas.shatkonlabs.com/ads?type='+type)
+                .get('http://api.spas.shatkonlabs.com/ads')
                 .then(handleSuccess, handleError('Error getting all users'));
         }
 

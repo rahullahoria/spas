@@ -198,9 +198,9 @@
         function loadToCallCandidates(){
             vm.dataLoading = true;
 
-            CandidateService.GetStatus("")
+            CandidateService.GetStatus()
                 .then(function (response) {
-                    vm.users = response.users;
+                    vm.allAds = response.ads;
                     vm.dataLoading = false;
 
 

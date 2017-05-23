@@ -128,44 +128,41 @@
                             </thead>
                             <tbody>
 
-                            <tr ng-repeat="user in vm.users"  class="{{ (topic.amount_made==null)?'warning':'success' }}">
+
+
+                            <tr ng-repeat="ad in vm.allAds"  class="{{ (topic.amount_made==null)?'warning':'success' }}">
 
                                 <td>
-                                    <a ng-click="vm.userDetails($index)">{{ user.username }}</a>
+                                    <a ng-click="vm.userDetails($index)">{{ ad.id }}</a>
                                 </td>
                                 <td>
-                                    {{ user.mobile}}
+                                    {{ ad.title}}
                                 </td>
                                 <td>
-                                    {{ user.ref_user_id}}
+                                    {{ ad.gender}}
                                 </td>
                                 <td>
-                                    {{ user.exam_id}}
-                                </td>
-
-                                <td>
-                                    {{ user.account_holder_name}}
-                                </td>
-                                <td>
-                                    {{ user.account_number}}
-                                </td>
-                                <td>
-                                    {{ user.ifsc_code}}
-                                </td>
-                                <td>
-                                    {{ user.amount_made}}
+                                    {{ ad.age_lower}}
                                 </td>
 
                                 <td>
-                                    {{ user.creation}}
+                                    {{ ad.age_higher}}
                                 </td>
                                 <td>
-                                    <!--  -->
-                                    <button ng-click="vm.inviteForTest(user.mobile)" ng-show="vm.loadType == 'nd'" >Invite Again</button>
-                                    <button ng-click="vm.askForRef(user.mobile)"  >Ref Link</button>
-                                    <button ng-click="vm.askToBuy(user.mobile,$index)" ng-show="vm.loadType == 'd'">Ask To Buy</button>
-                                    <button ng-click="vm.sendFBShareLink(user.mobile,user.test_id)" ng-show="vm.loadType == 'd' || vm.loadType == 'p'">Send</button>
+                                    {{ ad.area}}
+                                </td>
+                                <td>
+                                    {{ ad.city}}
+                                </td>
+                                <td>
+                                    {{ ad.km}}
+                                </td>
 
+                                <td>
+                                    {{ ad.creation}}
+                                </td>
+                                <td>
+                                  {{ ad.status}}
                                 </td>
 
                             </tr>
