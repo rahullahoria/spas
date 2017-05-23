@@ -4,9 +4,6 @@
     <list default="true" id="34c6412e-7908-4917-8fda-3bfe85d804c0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/ads/createAds.php" afterPath="$PROJECT_DIR$/api/resources/ads/createAds.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/admin/app-services/candidate.service.js" afterPath="$PROJECT_DIR$/website/admin/app-services/candidate.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/admin/member/member.controller.js" afterPath="$PROJECT_DIR$/website/admin/member/member.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/admin/member/member.view.html" afterPath="$PROJECT_DIR$/website/admin/member/member.view.html" />
     </list>
     <ignored path="spas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,10 +83,10 @@
       <file leaf-file-name="createAds.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/resources/ads/createAds.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6660746">
-              <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.39964476">
+              <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
               <folding>
-                <marker date="1495543744956" expanded="true" signature="338:558" placeholder="INSERT INTO `ads`... " />
+                <marker date="1495543895532" expanded="true" signature="338:559" placeholder="INSERT INTO `ads`... " />
               </folding>
             </state>
           </provider>
@@ -489,7 +486,13 @@
       <option name="project" value="LOCAL" />
       <updated>1495543206394</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="first">
+      <created>1495543754290</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1495543754290</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -845,10 +848,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/ads/createAds.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6660746">
-          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.39964476">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
           <folding>
-            <marker date="1495543744956" expanded="true" signature="338:558" placeholder="INSERT INTO `ads`... " />
+            <marker date="1495543895532" expanded="true" signature="338:559" placeholder="INSERT INTO `ads`... " />
           </folding>
         </state>
       </provider>

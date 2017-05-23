@@ -18,7 +18,7 @@ function createAds(){
     }
 
     $sqlUpdateStatus = "INSERT INTO `ads`
-      (`title`, vedio_id`, `gender`, `age_lower`, `age_higher`,`area`,`city`,`km`, `creation`,`status`) VALUES
+      (`title`, `vedio_id`, `gender`, `age_lower`, `age_higher`,`area`,`city`,`km`, `creation`,`status`) VALUES
       (:title, :videoId,:gender,:ageLower,:ageHigher, :area, :city, :km, :creation,:status)
 ";
 
