@@ -1,0 +1,93 @@
+<ion-view view-title="{{type| uppercase}} POSTS <span class='badge badge-positive' >{{posts.length}}</span>">
+
+
+    <ion-content has-header="true" class="padding " style="
+    
+        overflow-x: hidden ! important;
+    background-image: url('./img/homepage.jpg');
+    background-size:     contain;                      /* <------ */
+    background-repeat: no-repeat;
+        background-position: top;
+    margin-top: -50px">
+        <ion-refresher
+                pulling-text="Pull to refresh..."
+                on-refresh="doRefresh()">
+        </ion-refresher>
+        <video controls id="video" style="width: 100%;height:100%;" >
+            <source  src="http://192.168.43.23/dpower4/temp/1.mp4" type="video/mp4" />
+        </video>
+
+
+<!-- invite other helper code -->
+        <div class="list card" ng-repeat="post in posts">
+
+            <div class="item item-avatar">
+                <img src="img/icon.png">
+                <h2>{{ post.title}}</h2>
+                <p>{{ post.last_update}}</p>
+            </div>
+
+            <div class="item item-body">
+                <img class="full-image" image-lazy-src="http://api.file-dog.shatkonlabs.com/files/rahul/{{post.gen_img_id}}">
+                <p>
+                    {{ post.description}}
+                </p>
+                <p>
+                    <a href="http://{{post.link}}" class="subdued">Link: {{ post.link}}</a>
+                    <!--<a href="#" class="subdued">5 Comments</a>-->
+                </p>
+                <div class="button-bar" ng-show="(type=='not-approved' || type=='approved')">
+                    <a class="button button-small button-assertive button-full ion-clock"
+                         ion-datetime-picker am-pm ng-model="datetimeValue" disablepreviousdates
+
+                         ng-change="postSch(datetimeValue, {{post.id}})"
+                         ng-class="{ 'has-errors' : (!data.startTimeSet), 'no-errors' : (data.startTimeSet)}">
+
+                        <span > {{ (type=='not-approved')?'Approve':'Re-Schedule'}} </span>
+
+                        <i class="icon "></i>
+
+                    </a>
+                    <a class="button button-small button-block button-full ion-close-round"
+                        ng-click="rejectPost({{post.id}})" > Deny</a>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class='card'>
+            <div class="item item-text-wrap">
+                <div style="text-align: center;">
+                    <i> For queries and issues
+                    </i>
+                    <div class="button-bar">
+                        <a class="button button-small button-full ion-ios7-telephone ion-android-call"
+                           ng-href="tel: +91 9599075355"> Call</a>
+                        <a class="button button-small button-full ion-email"
+                           onclick="window.open('mailto:info@blueteam.in','_system')"> Email</a>
+                        <a class="button button-small button-full ion-cloud"
+                           onclick="window.open('http://www.BlueTeam.in','_system')"> Web</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </ion-content>
+    <div class="fixed-outside">
+        <div class="row">
+            <div class="col">
+
+            </div>
+            <div class="col">
+                <button class="button button-circle button-assertive icon ion-plus-circled " style="margin-left: 80px;" ng-click="addPost()"></button>
+            </div>
+        </div>
+
+
+    </div>
+</ion-view>
