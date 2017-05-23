@@ -132,7 +132,7 @@
         }
 
         function CreateAdv(adv) {
-            return $http.post('https://api.spas.shatkonlabs.com/ads', adv).then(handleSuccess, handleError('Error updating user'));
+            return $http.post('http://api.spas.shatkonlabs.com/ads', adv).then(handleSuccess, handleError('Error updating user'));
         }
 
         function AddRemark(userMd5, instance) {

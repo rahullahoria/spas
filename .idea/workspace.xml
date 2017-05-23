@@ -3,16 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="34c6412e-7908-4917-8fda-3bfe85d804c0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/ads/createAds.php" afterPath="$PROJECT_DIR$/api/resources/ads/createAds.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spas/config.xml" afterPath="$PROJECT_DIR$/app/spas/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spas/package.json" afterPath="$PROJECT_DIR$/app/spas/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spas/www/js/app.js" afterPath="$PROJECT_DIR$/app/spas/www/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spas/www/js/controllers/RegCtrl.js" afterPath="$PROJECT_DIR$/app/spas/www/js/controllers/RegCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/db.php" afterPath="$PROJECT_DIR$/api/db.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/admin/app-services/candidate.service.js" afterPath="$PROJECT_DIR$/website/admin/app-services/candidate.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/admin/index.html" afterPath="$PROJECT_DIR$/website/admin/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/admin/login/login.view.html" afterPath="$PROJECT_DIR$/website/admin/login/login.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/admin/member/member.controller.js" afterPath="$PROJECT_DIR$/website/admin/member/member.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/admin/member/member.view.html" afterPath="$PROJECT_DIR$/website/admin/member/member.view.html" />
     </list>
     <ignored path="spas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,16 +46,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="employee.view.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website/admin/employee/employee.view.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="90.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="member.view.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/admin/member/member.view.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -84,14 +66,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createAds.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="createAds.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/resources/ads/createAds.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6660746">
-              <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+            <state vertical-scroll-proportion="-16.875">
+              <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
               <folding>
                 <marker date="1495541881980" expanded="true" signature="338:542" placeholder="INSERT INTO `ads`... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/db.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.125">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -106,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="candidate.service.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="candidate.service.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website/admin/app-services/candidate.service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.36021507">
+              <caret line="134" column="35" selection-start-line="134" selection-start-column="35" selection-end-line="134" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -153,9 +145,10 @@
         <option value="$PROJECT_DIR$/website/admin/login/login.view.html" />
         <option value="$PROJECT_DIR$/website/admin/index.html" />
         <option value="$PROJECT_DIR$/website/admin/member/member.controller.js" />
-        <option value="$PROJECT_DIR$/website/admin/app-services/candidate.service.js" />
         <option value="$PROJECT_DIR$/website/admin/member/member.view.html" />
         <option value="$PROJECT_DIR$/api/resources/ads/createAds.php" />
+        <option value="$PROJECT_DIR$/api/db.php" />
+        <option value="$PROJECT_DIR$/website/admin/app-services/candidate.service.js" />
       </list>
     </option>
   </component>
@@ -463,7 +456,13 @@
       <option name="project" value="LOCAL" />
       <updated>1495283002404</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first">
+      <created>1495541891294</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1495541891294</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -472,6 +471,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2688822" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -479,7 +479,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -756,14 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/admin/app-services/candidate.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/admin/login/login.view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.3333333">
@@ -790,11 +781,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/ads/createAds.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6660746">
-          <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+        <state vertical-scroll-proportion="-16.875">
+          <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
           <folding>
             <marker date="1495541881980" expanded="true" signature="338:542" placeholder="INSERT INTO `ads`... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.125">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/admin/app-services/candidate.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36021507">
+          <caret line="134" column="35" selection-start-line="134" selection-start-column="35" selection-end-line="134" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
