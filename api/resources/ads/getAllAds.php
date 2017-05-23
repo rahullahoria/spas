@@ -6,7 +6,7 @@
  * Time: 6:03 PM
  */
 
-function getAllAds($userId){
+function getAllAds(){
 
     $sql = "SELECT *
 FROM `ads`

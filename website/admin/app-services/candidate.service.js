@@ -42,7 +42,7 @@
 
         function GetStatus(type) {
             return $http
-                .get('https://api.examhans.com/users?type='+type)
+                .get('http://api.spas.shatkonlabs.com/ads?type='+type)
                 .then(handleSuccess, handleError('Error getting all users'));
         }
 
