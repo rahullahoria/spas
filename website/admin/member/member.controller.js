@@ -138,6 +138,10 @@
 
 
             CandidateService.CreateAdv(vm.adv).then(function (response) {
+                if(response.ads.id){
+                    vm.adv = {};
+                    vm.adv.file = {};
+                }
                 console.log(response);
             });
 
