@@ -128,7 +128,7 @@ angular.module('starter.controllers')
             var vidURL = "urlToVideo";
             var myVideo = document.getElementsByTagName('video')[0];
 
-            var vidURL = "http://192.168.43.23/dpower4/temp/3.mp4";
+            var vidURL = "http://api.file-dog.shatkonlabs.com/files/rahul/1997";
             myVideo.src = vidURL;
             myVideo.load();
             myVideo.play();

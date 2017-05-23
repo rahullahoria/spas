@@ -10,6 +10,7 @@
         var vm = this;
 
         vm.user = {};
+        vm.adv = {};
         vm.inUser = null;
         vm.allUsers = [];
         vm.deleteUser = deleteUser;
@@ -51,6 +52,26 @@
 
 
 
+        vm.uploadVideo = function(){
+            vm.videoUploading = true;
+            vm.processing = true;
+
+            CandidateService.upload('video_file').then(function (response) {
+                vm.processing = false;
+                if (response.file.id) {
+                    vm.adv.video_id = response.file.id;
+                    console.log(vm.adv.video_id);
+
+                } else {
+                    FlashService.Error(response.message);
+                    vm.videoUploading = false;
+
+                }
+
+                return false;
+
+            });
+        }
 
 
         vm.logout = function(){
@@ -85,6 +106,20 @@
             $("#userModel").modal("show");
         };
 
+        vm.newAddModel = function(){
+            /*vm.loadUserId = index;
+            CandidateService.GetRemarks(vm.users[vm.loadUserId].mobile)
+                .then(function (response) {
+                    vm.comments = response.feedbacks;
+
+
+
+
+                    console.log('inside controller',vm.comments);
+                });*/
+            $("#adsModel").modal("show");
+        };
+
         vm.writeAboutUser = function(user){
 
             CandidateService.AddRemark(user.username,
@@ -99,14 +134,11 @@
 
         };
 
-        vm.sendFBShareLink = function(mobile,id){
-            var text = "To get amount transferred inside your account.\nPlease Share Us\n";
-            text += "http://www.facebook.com/sharer.php?u=http://examhans.com/story.php?t="+id;
+        vm.createAdv = function(mobile,id){
 
-            CandidateService.SendSMS(mobile,text).then(function (response) {
-                alert("SMS sent: "+text);
-                vm.user.feedback = 'SMS sent as : ' + text;
-                vm.writeAboutUser({username:mobile});
+
+            CandidateService.CreateAdv(vm.adv).then(function (response) {
+                console.log(response);
             });
 
         }

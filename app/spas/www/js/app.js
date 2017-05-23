@@ -17,6 +17,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services',
                 cordova.plugins.Keyboard.disableScroll(true);
 
             }
+            cordova.plugins.autoStart.enable();
             if (window.StatusBar) {
                 // org.apache.cordova.statusbar required
                 StatusBar.styleLightContent();

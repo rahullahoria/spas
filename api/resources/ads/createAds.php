@@ -28,7 +28,7 @@ function createAds(){
         $stmt = $db->prepare($sqlUpdateStatus);
 
         $status = "active";
-        $stmt->bindParam("videoId", $ads->videoId);
+        $stmt->bindParam("videoId", $ads->video_id);
         $stmt->bindParam("gender", $ads->gender);
         $stmt->bindParam("ageLower", $ads->age_lower);
         $stmt->bindParam("ageHigher", $ads->age_higher);

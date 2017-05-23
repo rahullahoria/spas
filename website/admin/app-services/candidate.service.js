@@ -27,12 +27,13 @@
         service.GetTopicMatter = GetTopicMatter;
         service.CheckOTP = CheckOTP;
         service.StartDemoTest = StartDemoTest;
-        service.postAccount = postAccount;
+        service.CreateAdv = CreateAdv;
         service.GetExamSubjects = GetExamSubjects;
         service.GetExamSubjectTopics = GetExamSubjectTopics;
         service.AddRemark = AddRemark;
         service.GetRemarks = GetRemarks;
         service.SendSMS = SendSMS;
+        service.upload = upload;
 
 
         return service;
@@ -49,6 +50,16 @@
             return $http.post('https://api.examhans.com/channel/sms/'+mobile, {'text':text})
                 .then(handleSuccess, handleError('Error updating user'));
 ;
+        }
+
+        function upload(id) {
+            var fileUrl = document.getElementById(id);
+            var data = new FormData();
+            data.append('fileToUpload', fileUrl.files[0]);
+            return $http.post("http://api.file-dog.shatkonlabs.com/files/rahul", data, {
+                transformRequest: angular.identity,
+                headers: {'Content-Type': undefined} }).then(handleSuccess, handleError('Error uploading file'));
+
         }
 
         function GetExamSubjects(id) {
@@ -120,8 +131,8 @@
             return $http.post('https://api.examhans.com/user/'+userMd5+'/test/', instance).then(handleSuccess, handleError('Error updating user'));
         }
 
-        function postAccount(userMd5, instance) {
-            return $http.post('https://api.examhans.com/user/'+userMd5+'/bank_account', instance).then(handleSuccess, handleError('Error updating user'));
+        function CreateAdv(adv) {
+            return $http.post('https://api.spas.shatkonlabs.com/ads', adv).then(handleSuccess, handleError('Error updating user'));
         }
 
         function AddRemark(userMd5, instance) {
