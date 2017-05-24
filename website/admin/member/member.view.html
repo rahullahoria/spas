@@ -133,7 +133,7 @@
                             <tr ng-repeat="ad in vm.allAds"  class="{{ (topic.amount_made==null)?'warning':'success' }}">
 
                                 <td>
-                                    <a ng-click="vm.userDetails($index)">{{ ad.id }}</a>
+                                    <a ng-click="vm.videoDetails($index)">{{ ad.id }}</a>
                                 </td>
                                 <td>
                                     {{ ad.title}}
@@ -306,15 +306,14 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">{{ vm.users[vm.loadUserId].username }}</h4>
-                <h5 class="modal-title">Mobile:{{ vm.users[vm.loadUserId].mobile }}<br>
-                    AHN:{{ vm.users[vm.loadUserId].account_holder_name }},
-                    AN:{{ vm.users[vm.loadUserId].account_number }},
-                    IFSC:{{ vm.users[vm.loadUserId].ifsc_code }},
-                    AM:{{ vm.users[vm.loadUserId].amount_made }}Rs
-                </h5>
+                <h4 class="modal-title">{{ vm.allAds[vm.loadUserId].title }}</h4>
+
             </div>
             <div class="modal-body">
+                <video controls id="video" style="width: 100%;height:100%;" >
+                    <source type="video/mp4" />
+                </video>
+
                 <div style="height: 250px; overflow-y: scroll;">
                 <div ng-repeat="comment in vm.comments" >
                 {{ comment.creation }}<br>

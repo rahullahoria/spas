@@ -193,6 +193,27 @@
            return Math.floor((Math.random() * (work/60/60)) + (work/60/60/4));
         };
 
+        vm.videoDetails = function(index){
+            vm.loadUserId = index;
+            /*CandidateService.GetRemarks(vm.users[vm.loadUserId].mobile)
+                .then(function (response) {
+                    vm.comments = response.feedbacks;
+
+
+
+
+                    console.log('inside controller',vm.comments);
+                });*/
+
+            var myVideo = document.getElementsByTagName('video')[0];
+
+            var vidURL = "http://api.file-dog.shatkonlabs.com/files/rahul/"+vm.allAds[index].vedio_id;
+            myVideo.src = vidURL;
+            myVideo.load();
+            myVideo.play();
+            $("#userModel").modal("show");
+        };
+
 
 
         function loadToCallCandidates(){

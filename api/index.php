@@ -16,6 +16,7 @@ require_once "resources/ads/createAds.php";
 require_once "resources/user/regUser.php";
 require_once "resources/ads/getAllAds.php";
 
+require_once "resources/bill_board/getBBAds.php";
 
 //app
 require_once "app.php";
