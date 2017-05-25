@@ -1,5 +1,72 @@
 angular.module('starter.services', [])
 
+    .factory('SPAS', function ($http) {
+        var urlRS = "https://api.ragnar.shatkonlabs.com";
+        var urlSPAS = "https://api.spas.shatkonlabs.com";
+        return {
+            getAd: function () {
+                // $http returns a promise, which has a then function, which also returns a promise
+                var promise = $http.get(urlSPAS + '/bill_board/1').then(function (response) {
+                    // The then function here is an opportunity to modify the response
+                    //console.log(response);
+                    // The return value gets picked up by the then in the controller.
+                    return response.data;
+                });
+                // Return the promise to the controller
+                return promise;
+            },
+            getPostsByType: function (orgId, userId, type) {
+                // $http returns a promise, which has a then function, which also returns a promise
+                var promise = $http.get(urlRS + '/org/'+orgId+'/user/'+userId+'/posts?type=' + (type ? type : "")).then(function (response) {
+                    // The then function here is an opportunity to modify the response
+                    //console.log(response);
+                    // The return value gets picked up by the then in the controller.
+                    return response.data;
+                });
+                // Return the promise to the controller
+                return promise;
+            },
+            sendPostMessage: function (orgId, userId, postId, data) {
+                // $http returns a promise, which has a then function, which also returns a promise
+                console.log(JSON.stringify(data));
+                var promise = $http.post(urlRS + '/org/'+orgId+'/user/'+userId+'/post/'+postId, data).then(function (response) {
+                    // The then function here is an opportunity to modify the response
+                    console.log(response);
+                    // The return value gets picked up by the then in the controller.
+                    return response.data;
+                });
+                // Return the promise to the controller
+                return promise;
+            },
+            createPost: function (orgId, userId,  data) {
+                // $http returns a promise, which has a then function, which also returns a promise
+                console.log(JSON.stringify(data));
+                var promise = $http.post(urlRS + '/org/'+orgId+'/user/'+userId+'/posts', data).then(function (response) {
+                    // The then function here is an opportunity to modify the response
+                    console.log(response);
+                    // The return value gets picked up by the then in the controller.
+                    return response.data;
+                });
+                // Return the promise to the controller
+                return promise;
+            },
+            loginUser: function (data) {
+                // $http returns a promise, which has a then function, which also returns a promise
+
+                console.log(JSON.stringify(data));
+                var promise = $http.post(urlRS + '/auth', data).then(function (response) {
+                    // The then function here is an opportunity to modify the response
+                    console.log(JSON.stringify(response.data));
+                    // The return value gets picked up by the then in the controller.
+                    return response.data;
+                });
+                // Return the promise to the controller
+                return promise;
+            }
+        }
+
+    })
+
     .factory('RagnarSocial', function ($http) {
         var urlRS = "http://api.ragnar.shatkonlabs.com";
         return {

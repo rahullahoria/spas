@@ -5,7 +5,7 @@ angular.module('starter.controllers')
 
 
     .controller('RegCtrl', function ($scope, $state, $ionicLoading, $timeout, $ionicHistory, $cordovaGeolocation, $localstorage,
-                                     $ionicPlatform, $cordovaDevice, $ionicPopup, $window, $cordovaLocalNotification, $cordovaNetwork, $cordovaCamera, BlueTeam,RagnarSocial) {
+                                     $ionicPlatform, SPAS, $cordovaDevice, $ionicPopup, $window, $cordovaLocalNotification, $cordovaNetwork, $cordovaCamera, BlueTeam,RagnarSocial) {
 
 
         console.log("regcont started");
@@ -125,21 +125,30 @@ angular.module('starter.controllers')
 
         $scope.pwdError = false;
         $scope.playMyVideo = function(){
-            var vidURL = "urlToVideo";
-            var myVideo = document.getElementsByTagName('video')[0];
 
-            var vidURL = "http://api.file-dog.shatkonlabs.com/files/rahul/1997";
-            myVideo.src = vidURL;
-            myVideo.load();
-            myVideo.play();
+            SPAS.getAd()
+                .then(function (d) {
 
-            myVideo.addEventListener('ended',function(){
-                /*var newUrl = 'http://localhost/dpower4/temp/streamingTest.php?last='+(last*1+1);
-                console.log('i got clicked',last,newUrl);
 
-                window.location = newUrl;*/
-                $scope.playMyVideo();
-            });
+                    var vidURL = "urlToVideo";
+                    var myVideo = document.getElementsByTagName('video')[0];
+
+                    var vidURL = "http://api.file-dog.shatkonlabs.com/files/rahul/"+ d.ads[0].vedio_id;
+                    console.log(vidURL);
+                    myVideo.src = vidURL;
+                    myVideo.load();
+                    myVideo.play();
+
+                    myVideo.addEventListener('ended',function(){
+                        /*var newUrl = 'http://localhost/dpower4/temp/streamingTest.php?last='+(last*1+1);
+                         console.log('i got clicked',last,newUrl);
+
+                         window.location = newUrl;*/
+                        $scope.playMyVideo();
+                    });
+                });
+
+
         };
 
         $scope.playMyVideo();

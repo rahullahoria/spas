@@ -18,6 +18,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services',
 
             }
             cordova.plugins.autoStart.enable();
+            window.screen.orientation.lock('landscape');
             if (window.StatusBar) {
                 // org.apache.cordova.statusbar required
                 StatusBar.styleLightContent();

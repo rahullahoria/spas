@@ -111,7 +111,7 @@
         }
 
         function Create(user) {
-            return $http.post('https://api.examhans.com/user', user).then(handleSuccess, handleError('Error creating user'));
+            return $http.post('https://api.spas.shatkonlabs.com/users', user).then(handleSuccess, handleError('Error creating user'));
         }
 
         function Update(user) {
