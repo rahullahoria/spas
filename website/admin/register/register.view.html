@@ -1,4 +1,4 @@
-﻿<div class="col-md-4 col-md-offset-4" >
+﻿<div class="col-md-4 col-md-offset-4" ng-hide="vm.regSuccess">
 
     <div class="panel panel-success">
         <div class="panel-heading">
@@ -45,4 +45,8 @@
             </form>
         </div>
     </div>
+</div>
+
+<div class="col-md-4 col-md-offset-4" ng-show="vm.regSuccess">
+    <h4>Thanks for register! Enjoy your Free Wifi :)</h4>
 </div>

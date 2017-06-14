@@ -29,6 +29,11 @@ $app->post('/users', 'regUser');
 $app->post('/ads', 'createAds');
 $app->get('/ads','getAllAds');
 $app->get('/bill_board/:id','getBBAds');
+$app->post('/bill_board/:id/order','postOrder');
+$app->post('/bill_board/:id/waiter','storeWaiter');
+$app->post('/bill_board/:id/feedback','storeFeedback');
+
+$app->get('/user/:mobile/otp/:otp', 'checkOtp');
 
 //$app->get('/service_provider','getServiceProviderByType');
 

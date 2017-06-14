@@ -4,8 +4,8 @@
 angular.module('starter.controllers')
 
 
-    .controller('RegCtrl', function ($scope, $state, $ionicLoading, $timeout, $ionicHistory, $cordovaGeolocation, $localstorage,
-                                     $ionicPlatform, SPAS, $cordovaDevice, $ionicPopup, $window, $cordovaLocalNotification, $cordovaNetwork, $cordovaCamera, BlueTeam,RagnarSocial) {
+    .controller('RegCtrl', function ($sce,$scope, $state, $ionicLoading, $timeout, $ionicHistory, $cordovaGeolocation, $localstorage,
+                                     $ionicPlatform,$cordovaFile, $cordovaFileTransfer, SPAS, $cordovaDevice, $ionicPopup, $window, $cordovaLocalNotification, $cordovaNetwork, $cordovaCamera, BlueTeam,RagnarSocial) {
 
 
         console.log("regcont started");
@@ -49,6 +49,23 @@ angular.module('starter.controllers')
 
         };
 
+        $scope.ratingsObject = {
+            iconOn: 'ion-ios-star',    //Optional
+            iconOff: 'ion-ios-star-outline',   //Optional
+            iconOnColor: 'rgb(200, 200, 100)',  //Optional
+            iconOffColor:  'rgb(200, 100, 100)',    //Optional
+            rating:  2, //Optional
+            minRating:1,    //Optional
+            readOnly: true, //Optional
+            callback: function(rating, index) {    //Mandatory
+                $scope.ratingsCallback(rating, index);
+            }
+        };
+
+        $scope.ratingsCallback = function(rating, index) {
+            console.log('Selected rating is : ', rating, ' and the index is : ', index);
+        };
+
 
 
 
@@ -76,7 +93,44 @@ angular.module('starter.controllers')
         $scope.hide = function () {
             $ionicLoading.hide();
         };
+        $scope.feedbackD = {};
 
+        $scope.submitFeedBack = function(){
+            $scope.waiterCalled = true;
+            SPAS.postFeedback(1,{table:1,rating:$scope.feedbackD.rating,mobile:$scope.feedbackD.mobile})
+                .then(function (d) {
+
+                    $scope.feedbackD = {};
+
+                    $timeout(function () {
+                        $scope.waiterCalled = false;
+                    }, 6000);
+
+
+                });
+            $timeout(function () {
+                $scope.waiterCalled = false;
+            }, 60000);
+
+        };
+
+        $scope.order = function(){
+            $scope.ordered = true;
+            SPAS.orderByTable(1,{table:1,adv:234})
+                .then(function (d) {
+
+                    $timeout(function () {
+                        $scope.ordered = false;
+                    }, 6000);
+
+
+                });
+            $timeout(function () {
+                $scope.ordered = false;
+            }, 60000);
+
+
+        };
 
 
 
@@ -124,34 +178,123 @@ angular.module('starter.controllers')
         }
 
         $scope.pwdError = false;
+        $scope.first = false;
         $scope.playMyVideo = function(){
 
-            SPAS.getAd()
-                .then(function (d) {
+
+            var myVideo = document.getElementsByTagName('video')[0];
+
+            myVideo.src = $scope.vidoURL;
+            myVideo.load();
+            console.log(myVideo.src);
+            myVideo.play();
+
+            /*if (myVideo.requestFullscreen) {
+                myVideo.requestFullscreen();
+            } else if (myVideo.msRequestFullscreen) {
+                myVideo.msRequestFullscreen();
+            } else if (myVideo.mozRequestFullScreen) {
+                myVideo.mozRequestFullScreen();
+            } else if (myVideo.webkitRequestFullscreen) {
+                myVideo.webkitRequestFullscreen();
+            }*/
+
+            if(!$scope.first)
+            myVideo.addEventListener('ended',function(){
+                $scope.first = true;
+                $scope.getFile();
+            });
 
 
-                    var vidURL = "urlToVideo";
-                    var myVideo = document.getElementsByTagName('video')[0];
-
-                    var vidURL = "http://api.file-dog.shatkonlabs.com/files/rahul/"+ d.ads[0].vedio_id;
-                    console.log(vidURL);
-                    myVideo.src = vidURL;
-                    myVideo.load();
-                    myVideo.play();
-
-                    myVideo.addEventListener('ended',function(){
-                        /*var newUrl = 'http://localhost/dpower4/temp/streamingTest.php?last='+(last*1+1);
-                         console.log('i got clicked',last,newUrl);
-
-                         window.location = newUrl;*/
-                        $scope.playMyVideo();
-                    });
-                });
 
 
         };
 
-        $scope.playMyVideo();
+
+
+        $scope.downloadProgress = 0;
+        $scope.vidoURL = "file:///data/user/0/com.shatkonlabs.spas/files/spas/ads/2009.mp4";
+
+        $scope.getFile = function(){
+
+            SPAS.getAd()
+                .then(function (d) {
+
+                    //var vidURL = "http://api.file-dog.shatkonlabs.com/files/rahul/"+ d.ads[0].vedio_id;
+                    console.log("video Url", JSON.stringify($scope.vidoURL),JSON.stringify(window.location));
+                    //$scope.getFile(d.ads[0].vedio_id);
+                    var id = d.ads[0].vedio_id;
+
+                    var url = "http://api.file-dog.shatkonlabs.com/files/rahul/"+id;
+                    var targetPath = cordova.file.applicationStorageDirectory  + "spas/ads/"+id+".mp4";
+                    var trustHosts = true;
+                    var options = {};
+
+                    $scope.vidoURL = url;
+
+                    /*$cordovaFile.checkFile(cordova.file.applicationStorageDirectory , "spas/ads/"+id+".mp4")
+                        .then(function (success) {
+                            // success
+                            $scope.vidoURL = targetPath;
+
+                            $scope.playMyVideo();
+
+                        }, function (error) {
+                            // error
+                            $scope.vidoURL = url;
+                            $scope.playMyVideo();
+                            $cordovaFileTransfer.download(url, targetPath, options, trustHosts)
+                                .then(function(result) {
+                                    // Success!
+
+                                    //$scope.vidoURL = targetPath;
+                                    console.log($scope.vidoURL, "success");
+                                    //alert("done sucess");
+                                }, function(err) {
+                                    // Error
+                                    console.log(JSON.stringify(cordova.file),JSON.stringify(err),url,"errir");
+                                }, function (progress) {
+                                    $timeout(function () {
+                                        $scope.downloadProgress = (progress.loaded / progress.total) * 100;
+                                        //console.log("Downloading progress",$scope.downloadProgress);
+                                    });
+                                });
+                        });*/
+
+
+
+                }, function(error){
+                    console.error("The following error occurred: "+error);
+                    $scope.playMyVideo();
+                });
+
+
+
+
+
+        }
+
+        $timeout(function () {
+            $scope.getFile();
+        }, 5000);
+
+        $scope.waiterCalled = false;
+
+        $scope.callWaiter = function(){
+            $scope.waiterCalled = true;
+            SPAS.callWaiter(1,{table:1})
+                .then(function (d) {
+
+                    $timeout(function () {
+                        $scope.waiterCalled = false;
+                    }, 6000);
+
+
+                });
+            $timeout(function () {
+                $scope.waiterCalled = false;
+            }, 60000);
+        }
 
 
 
@@ -371,7 +514,7 @@ angular.module('starter.controllers')
 
         });
 
-        if ($localstorage.get('user_id') !== undefined && $localstorage.get('user_id') !== "") {
+       /* if ($localstorage.get('user_id') !== undefined && $localstorage.get('user_id') !== "") {
             $scope.user = JSON.parse($localstorage.get('user'));
             $scope.user.mobile = $scope.user.mobile*1;
             $scope.user.experience = $scope.user.experience*1;
@@ -382,7 +525,7 @@ angular.module('starter.controllers')
                 $state.go('tab.service-list');
             else
                 $state.go('map');
-        }
+        }*/
 
 
         if ($localstorage.get('name') === undefined || $localstorage.get('mobile') === undefined || $localstorage.get('email') === undefined ||
@@ -397,100 +540,10 @@ angular.module('starter.controllers')
         }
 
 
-        $scope.data = {"ImageURI": "Select Image"};
-        $scope.takePicture = function () {
-            console.log("take Pic Got clicked");
-
-            var options = {
-                quality: 50,
-                destinationType: Camera.DestinationType.FILE_URL,
-                sourceType: Camera.PictureSourceType.CAMERA
-            };
-            $cordovaCamera.getPicture(options).then(
-                function (imageData) {
-                    $scope.picData = imageData;
-                    $scope.ftLoad = true;
-                    $localstorage.set('fotoUp', imageData);
-
-                    $ionicLoading.show({template: 'wait...', duration: 500});
-                    $scope.uploadPicture();
-                },
-                function (err) {
-                    $ionicLoading.show({template: 'Error...', duration: 500});
-                })
-        }
-
-        $scope.selectPicture = function () {
 
 
 
-            var options = {
-                quality: 50,
-                destinationType: Camera.DestinationType.FILE_URI,
-                sourceType: Camera.PictureSourceType.PHOTOLIBRARY
-            };
 
-            $cordovaCamera.getPicture(options).then(
-                function (imageURI) {
-                    window.resolveLocalFileSystemURL(imageURI, function (fileEntry) {
-
-                        $scope.picData = fileEntry.toURL();
-                        $scope.ftLoad = true;
-                        $scope.uploadPicture();
-                        console.log($scope.picData);
-                        //var image = document.getElementById('myImage');
-                        //image.src = fileEntry.nativeURL;
-                    });
-                    $ionicLoading.show({template: 'wait...', duration: 500});
-                },
-                function (err) {
-                    $ionicLoading.show({template: 'error...', duration: 500});
-                })
-        };
-
-        $scope.uploadPicture = function () {
-            $ionicLoading.show({template: 'wait uploading the document, this may take a while ..'});
-
-            var fileURL = $scope.picData;
-
-            var options = new FileUploadOptions();
-            options.fileKey = "fileToUpload";
-            options.fileName = fileURL.substr(fileURL.lastIndexOf('/') + 1) + ".jpg";
-            options.mimeType = "image/jpeg";
-            options.chunkedMode = true;
-
-            var params = {};
-            params.username = "rahul";
-            params.password = "rahul";
-
-            options.params = params;
-
-            var ft = new FileTransfer();
-            ft.upload(
-                fileURL,
-                encodeURI("http://api.file-dog.shatkonlabs.com/files/rahul"),
-                viewUploadedPictures,
-                function (error) {
-                    $ionicLoading.show({
-                        template: 'Something went wrong ...'
-                    });
-                    $ionicLoading.hide();
-                },
-                options);
-        };
-        var viewUploadedPictures = function (response) {
-            console.log(JSON.stringify(response), "hi", response.response);
-            $ionicLoading.show({template: 'trying to load the pic ...'});
-            server = "http://api.file-dog.shatkonlabs.com/files/rahul/" + JSON.parse(response.response).file.id;
-
-            $scope.user.profile_pic_id = JSON.parse(response.response).file.id;
-
-            $scope.picData = server;
-            $scope.ftLoad = true;
-            console.log($scope.picData);
-
-            $ionicLoading.hide();
-        }
 
         $scope.basicRegDone = false;
         $scope.userServices = [];

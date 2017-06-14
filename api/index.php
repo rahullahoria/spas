@@ -18,6 +18,10 @@ require_once "resources/ads/getAllAds.php";
 
 require_once "resources/bill_board/getBBAds.php";
 
+require_once "resources/bill_board/feedback/storeFeedback.php";
+require_once "resources/bill_board/order/postOrder.php";
+require_once "resources/bill_board/waiter/storeWaiter.php";
+
 //app
 require_once "app.php";
 

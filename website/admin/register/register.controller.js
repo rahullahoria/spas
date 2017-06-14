@@ -5,8 +5,8 @@
         .module('app')
         .controller('RegisterController', RegisterController);
 
-    RegisterController.$inject = ['UserService', '$location', '$rootScope', 'FlashService'];
-    function RegisterController(UserService, $location, $rootScope, FlashService) {
+    RegisterController.$inject = ['UserService', '$location', '$rootScope', 'FlashService','CandidateService'];
+    function RegisterController(UserService, $location, $rootScope, FlashService,CandidateService) {
         var vm = this;
 
         vm.register = register;
@@ -17,10 +17,12 @@
                 )
                 .then(function (response) {
                     console.log("resp",response);
+                    vm.dataLoadingReg = false;
 
-                    if (response.response && response.response.user.id) {
-                        alert("Thanks for register! Enjoy your Free Wifi :)");
-                        AuthenticationService.SetCredentials(vm.user.reg_username, vm.user.reg_password);
+                    if (response.response && response.response.id) {
+                        vm.regSuccess = true;
+                        //alert("Thanks for register! Enjoy your Free Wifi :)");
+                        /*AuthenticationService.SetCredentials(vm.user.reg_username, vm.user.reg_password);
                         vm.inUser = response.results;
                         vm.inUser.username = vm.inUser.reg_username;
                         $cookieStore.put('inUser', JSON.stringify(vm.inUser));
@@ -29,12 +31,12 @@
                         vm.showVerification = true;
 
                         console.log("auth success in user",vm.inUser);
-                        //$location.path('/member');
+                        //$location.path('/member');*/
 
                     } else {
                         FlashService.Error(response.error.text);
                         vm.regError = response.error.text;
-                        vm.dataLoadingReg = false;
+
                     }
                 });
 

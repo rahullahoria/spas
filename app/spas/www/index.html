@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <meta http-equiv="Content-Security-Policy" content="default-src *; font-src data: *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; media-src 'self' 'unsafe-inline' 'unsafe-eval' *; font-src data: *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">
 
 
     <title></title>
@@ -35,27 +35,28 @@
     <script src="lib/ngCordova/dist/ng-cordova.js"></script>
     <script src="lib/angular-messages/angular-messages.min.js"></script>
 
-    <script src="lib/ionic-timepicker/dist/templates.js"></script>
-    <script src="lib/ionic-timepicker/dist/ionic-timepicker.bundle.min.js"></script>
+    <!--<script src="lib/ionic-timepicker/dist/templates.js"></script>-->
+    <!--<script src="lib/ionic-timepicker/dist/ionic-timepicker.bundle.min.js"></script>
 
     <script src="lib/ion-datetime-picker/release/ion-datetime-picker.min.js"></script>
-    <link href="lib/ion-datetime-picker/release/ion-datetime-picker.min.css" rel="stylesheet">
+    <link href="lib/ion-datetime-picker/release/ion-datetime-picker.min.css" rel="stylesheet">-->
     <script src="lib/ionic-rating/ionic-rating.min.js"></script>
 
     <script src="lib/ionic-image-lazy-load/ionic-image-lazy-load.js"></script>
+    <script src="lib/ionic-ratings/dist/ionic-ratings.min.js"></script>
 
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
-    <script src="js/controllers/TabCtrl.js"></script>
+    <!--<script src="js/controllers/TabCtrl.js"></script>
     <script src="js/controllers/T&CCtrl.js"></script>
     <script src="js/controllers/ServiceListCtrl.js"></script>
     <script src="js/controllers/GetFeedbackCtrl.js"></script>
     <script src="js/controllers/InvoiceCtrl.js"></script>
-    <script src="js/controllers/MonthlyIncomeCtrl.js"></script>
+    <script src="js/controllers/MonthlyIncomeCtrl.js"></script>-->
     <script src="js/controllers/RegCtrl.js"></script>
-    <script src="js/controllers/MapCtrl.js"></script>
+<!--    <script src="js/controllers/MapCtrl.js"></script>-->
 
 
     <script src="js/services.js"></script><!--
@@ -77,22 +78,87 @@
 
 
     <script type="text/ng-template" id="register.html">
-        <ion-view hide-nav-bar="true" >
+        <ion-view hide-nav-bar="true"  >
 
-            <ion-content >
-<div style="text-align: center;">
-         <video controls="controls" preload="metadata" style="
- " autoplay="autoplay" webkit-playsinline="webkit-playsinline" class="videoPlayer">
+            <ion-content overflow-scroll="false" style="background-color: black;">
+                <div style="text-align: center;" >
+                    <video  preload="metadata"
+                            style=" max-width: 100%;
+                                    max-height: 100%;
+                                    bottom: 0;
+                                    left: 0;
+                                    margin: auto;
+                                    overflow: hidden ;
+                                    position: fixed;
+                                    right: 0;
+                                    top: 0;
+                                    "
 
-             <source  type="video/mp4"/>
-         </video>
-</div>
+                            poster="img/icon.png"
+                            data-tap-disable="true"
 
-<!--<div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/gvI2ClWqHO0" frameborder="0" width="560" height="315"></iframe>
+                            class="videoPlayer">
+
+                        <source id="source"  type="video/mp4"/>
+                    </video>
                 </div>
-                -->
+
             </ion-content>
+            <div class="fixed-outside">
+
+                <div class="row">
+                    <div class="col" style="margin-top: -300px;margin-left: 20%" >
+
+
+                        <div ng-show="giveFeedback" style="width: 200%" class="card">
+                           <span style="color: black"> Please Rate Us !!! </span>
+                            <ionic-ratings ratingsobj='ratingsObject' index='0' style=" font-size: 100px;"></ionic-ratings>
+                        <div style="width: 60%;margin-left: 20%;">
+                            <label class="item item-input item-stacked-label " >
+
+                            <input type="number" name="name" placeholder="Mobile" ng-model="data.name" ng-minlength="10" ng-maxlength="10" required />
+                        </label>
+                        </div>
+                            <br>
+                            <button class="button  {{ (waiterCalled)?'button-assertive':'button-positive'}} icon ion-speakerphone " ng-click="submitFeedBack()" >Feed</button>
+
+                        </div>
+
+
+
+                    </div>
+                    <div class="col"></div>
+                    <div class="col" style="margin-top: -20px">
+                        <div class="row">
+                        <div class="button-bar">
+
+                        <button
+                                class="button button-circle {{ (waiterCalled)?'button-positive':'button-positive'}} icon ion-speakerphone"
+                                ng-click="giveFeedback = !giveFeedback"
+
+                        >
+
+                        </button>
+
+
+                        <button class="button button-circle {{ (waiterCalled)?'button-assertive':'button-positive'}} icon ion-android-call " ng-click="callWaiter()"></button>
+                        <button class="button button-circle {{ (waiterCalled)?'button-positive':'button-positive'}} icon ion-android-cart"  ng-click="order()"></button>
+
+
+
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">FeedBack</div>
+                            <div class="col">Waiter</div>
+                            <div class="col">Order</div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
         </ion-view>
 
     </script>

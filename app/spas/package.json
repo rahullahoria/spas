@@ -5,6 +5,9 @@
     "dependencies": {
         "cordova-plugin-autostart": "git+https://github.com/ToniKorin/cordova-plugin-autostart.git",
         "cordova-plugin-boot-launcher": "git+https://github.com/rahullahoria/cordova-plugin-boot-launcher.git",
+        "cordova-plugin-compat": "^1.1.0",
+        "cordova-plugin-file-transfer": "~1.5.1",
+        "cordova-plugin-media": "^2.4.1",
         "cordova-plugin-screen-orientation": "^2.0.1",
         "cordova-plugin-statusbar": "~2.1.3",
         "cordova-plugin-whitelist": "~1.0.0",
@@ -13,7 +16,8 @@
         "gulp-concat": "^2.2.0",
         "gulp-minify-css": "^0.3.0",
         "gulp-rename": "^1.2.0",
-        "gulp-sass": "^2.0.4"
+        "gulp-sass": "^2.0.4",
+        "cordova-plugin-file": "~4.1.1"
     },
     "devDependencies": {
         "bower": "^1.3.3",
@@ -35,7 +39,10 @@
             "cordova-plugin-statusbar": {},
             "cordova-plugin-autostart": {},
             "cordova-plugin-boot-launcher": {},
-            "cordova-plugin-screen-orientation": {}
+            "cordova-plugin-screen-orientation": {},
+            "cordova-plugin-file-transfer": {},
+            "cordova-plugin-file": {},
+            "cordova-plugin-media": {}
         }
     }
 }
