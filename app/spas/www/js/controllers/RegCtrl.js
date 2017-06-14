@@ -124,7 +124,7 @@ angular.module('starter.controllers')
 
                     $timeout(function () {
                         $scope.ordered = false;
-                    }, 6000);
+                    }, 60000);
 
 
                 });
@@ -233,9 +233,9 @@ angular.module('starter.controllers')
                     var trustHosts = true;
                     var options = {};
 
-                    $scope.vidoURL = url;
+                    //$scope.vidoURL = url;
 
-                    /*$cordovaFile.checkFile(cordova.file.applicationStorageDirectory , "spas/ads/"+id+".mp4")
+                    $cordovaFile.checkFile(cordova.file.applicationStorageDirectory , "spas/ads/"+id+".mp4")
                         .then(function (success) {
                             // success
                             $scope.vidoURL = targetPath;
@@ -262,7 +262,7 @@ angular.module('starter.controllers')
                                         //console.log("Downloading progress",$scope.downloadProgress);
                                     });
                                 });
-                        });*/
+                        });
 
 
 
@@ -277,9 +277,7 @@ angular.module('starter.controllers')
 
         }
 
-        $timeout(function () {
-            $scope.getFile();
-        }, 5000);
+
 
         $scope.waiterCalled = false;
 
@@ -302,6 +300,9 @@ angular.module('starter.controllers')
 
 
         $ionicPlatform.ready(function () {
+            $timeout(function () {
+                $scope.getFile();
+            }, 2000);
 
             /* if($scope.geolocation) {
              var locationService = $scope.geolocation; // native HTML5 geolocation
