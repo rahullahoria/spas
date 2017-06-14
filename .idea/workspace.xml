@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="34c6412e-7908-4917-8fda-3bfe85d804c0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/bill_board/feedback/storeFeedback.php" afterPath="$PROJECT_DIR$/api/resources/bill_board/feedback/storeFeedback.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/bill_board/waiter/storeWaiter.php" afterPath="$PROJECT_DIR$/api/resources/bill_board/waiter/storeWaiter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spas/www/index.html" afterPath="$PROJECT_DIR$/app/spas/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spas/www/js/controllers/RegCtrl.js" afterPath="$PROJECT_DIR$/app/spas/www/js/controllers/RegCtrl.js" />
     </list>
     <ignored path="spas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -115,11 +112,11 @@
       <file leaf-file-name="storeWaiter.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/resources/bill_board/waiter/storeWaiter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35828876">
-              <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.037433155">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
               <folding>
                 <element signature="e#6#94#0#PHP" expanded="true" />
-                <marker date="1497436133464" expanded="true" signature="332:424" placeholder="INSERT INTO `store_waiter_calls`... " />
+                <marker date="1497436197280" expanded="true" signature="335:427" placeholder="INSERT INTO `store_waiter_calls`... " />
               </folding>
             </state>
           </provider>
@@ -816,7 +813,13 @@
       <option name="project" value="LOCAL" />
       <updated>1497435361173</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="first">
+      <created>1497436142103</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1497436142104</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1247,11 +1250,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/bill_board/waiter/storeWaiter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35828876">
-          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.037433155">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
           <folding>
             <element signature="e#6#94#0#PHP" expanded="true" />
-            <marker date="1497436133464" expanded="true" signature="332:424" placeholder="INSERT INTO `store_waiter_calls`... " />
+            <marker date="1497436197280" expanded="true" signature="335:427" placeholder="INSERT INTO `store_waiter_calls`... " />
           </folding>
         </state>
       </provider>

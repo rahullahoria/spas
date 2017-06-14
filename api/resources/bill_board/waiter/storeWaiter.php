@@ -6,7 +6,7 @@
  * Time: 12:13 PM
  */
 
-function storeWaiter(){
+function storeWaiter($id){
 
     $request = \Slim\Slim::getInstance()->request();
 
