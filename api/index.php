@@ -23,6 +23,7 @@ require_once "resources/bill_board/feedback/storeFeedback.php";
 require_once "resources/bill_board/order/postOrder.php";
 require_once "resources/bill_board/waiter/storeWaiter.php";
 require_once "resources/bill_board/waiter/getWaiterCalls.php";
+require_once "resources/bill_board/waiter/callAccepted.php";
 
 //app
 require_once "app.php";
