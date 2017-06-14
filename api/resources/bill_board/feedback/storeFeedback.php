@@ -37,7 +37,7 @@ function storeFeedback($id){
 
         $feed->id = $db->lastInsertId();
 
-        $message = "Thanks for spending time with us! Please visit again! and enjoy next level services on your next visit \nfor complete feedback\n http://shatkonlabs.com";
+        $message = "Thanks for spending time with The Drunk House !\n Please visit again! and enjoy next level services on your next visit \nfor complete feedback\n http://shatkonlabs.com";
 
         if($feed->id)
             sendSMS($feed->mobile, $message);

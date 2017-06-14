@@ -18,7 +18,7 @@ function storeWaiter(){
     }
 
 
-    $sql = "INSERT INTO `store_waiter_calls`(table_id`, `bb_id`)
+    $sql = "INSERT INTO `store_waiter_calls`(`table_id`, `bb_id`)
               VALUES (:tableId, :bbId);";
 
 

@@ -14,6 +14,7 @@ angular.module('starter.controllers')
 
         $scope.user = {};
         $scope.data = {};
+        $scope.feedbackD = {};
         $scope.v = {};
         $scope.v.mobile = false;
         $scope.v.password = false;
@@ -48,13 +49,14 @@ angular.module('starter.controllers')
 
 
         };
+        $scope.feedbackD.rating = 4;
 
         $scope.ratingsObject = {
             iconOn: 'ion-ios-star',    //Optional
             iconOff: 'ion-ios-star-outline',   //Optional
             iconOnColor: 'rgb(200, 200, 100)',  //Optional
             iconOffColor:  'rgb(200, 100, 100)',    //Optional
-            rating:  2, //Optional
+            rating:  $scope.feedbackD.rating, //Optional
             minRating:1,    //Optional
             readOnly: true, //Optional
             callback: function(rating, index) {    //Mandatory
@@ -64,6 +66,7 @@ angular.module('starter.controllers')
 
         $scope.ratingsCallback = function(rating, index) {
             console.log('Selected rating is : ', rating, ' and the index is : ', index);
+            $scope.feedbackD.rating = rating;
         };
 
 
@@ -93,24 +96,24 @@ angular.module('starter.controllers')
         $scope.hide = function () {
             $ionicLoading.hide();
         };
-        $scope.feedbackD = {};
+
 
         $scope.submitFeedBack = function(){
-            $scope.waiterCalled = true;
+            //$scope.waiterCalled = true;
             SPAS.postFeedback(1,{table:1,rating:$scope.feedbackD.rating,mobile:$scope.feedbackD.mobile})
                 .then(function (d) {
 
                     $scope.feedbackD = {};
 
-                    $timeout(function () {
+                   /* $timeout(function () {
                         $scope.waiterCalled = false;
-                    }, 6000);
+                    }, 6000);*/
 
 
                 });
-            $timeout(function () {
+           /* $timeout(function () {
                 $scope.waiterCalled = false;
-            }, 60000);
+            }, 60000);*/
 
         };
 

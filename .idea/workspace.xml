@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="34c6412e-7908-4917-8fda-3bfe85d804c0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/index.php" afterPath="$PROJECT_DIR$/api/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/bill_board/feedback/storeFeedback.php" afterPath="$PROJECT_DIR$/api/resources/bill_board/feedback/storeFeedback.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/bill_board/waiter/storeWaiter.php" afterPath="$PROJECT_DIR$/api/resources/bill_board/waiter/storeWaiter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spas/www/index.html" afterPath="$PROJECT_DIR$/app/spas/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spas/www/js/controllers/RegCtrl.js" afterPath="$PROJECT_DIR$/app/spas/www/js/controllers/RegCtrl.js" />
     </list>
     <ignored path="spas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,23 +31,33 @@
       <file leaf-file-name="RegCtrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/spas/www/js/controllers/RegCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-28.48276">
-              <caret line="284" column="27" selection-start-line="284" selection-start-column="17" selection-end-line="284" selection-end-column="27" />
+            <state vertical-scroll-proportion="38.24138">
+              <caret line="113" column="13" selection-start-line="113" selection-start-column="11" selection-end-line="115" selection-end-column="24" />
               <folding>
-                <element signature="e#3752#4985#0" expanded="false" />
-                <element signature="e#5089#5909#0" expanded="false" />
-                <element signature="e#6080#8510#0" expanded="false" />
-                <element signature="e#9094#16623#0" expanded="false" />
+                <element signature="e#3868#5101#0" expanded="false" />
+                <element signature="e#5205#6025#0" expanded="false" />
+                <element signature="e#6196#8626#0" expanded="false" />
+                <element signature="e#9210#16739#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="services.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/spas/www/js/services.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/spas/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="56" column="79" selection-start-line="56" selection-start-column="79" selection-end-line="56" selection-end-column="79" />
+            <state vertical-scroll-proportion="-11.875">
+              <caret line="123" column="111" selection-start-line="123" selection-start-column="111" selection-end-line="123" selection-end-column="111" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="invoice.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/spas/www/templates/invoice.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.125">
+              <caret line="70" column="57" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -64,10 +77,10 @@
         <entry file="file://$PROJECT_DIR$/api/resources/bill_board/feedback/storeFeedback.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-16.875">
-              <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+              <caret line="39" column="69" selection-start-line="39" selection-start-column="69" selection-end-line="39" selection-end-column="69" />
               <folding>
                 <element signature="e#6#94#0#PHP" expanded="true" />
-                <marker date="1497426291500" expanded="true" signature="336:439" placeholder="INSERT INTO `store_ratings`... " />
+                <marker date="1497435826432" expanded="true" signature="336:439" placeholder="INSERT INTO `store_ratings`... " />
               </folding>
             </state>
           </provider>
@@ -99,33 +112,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="regUser.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/resources/user/regUser.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="5.375">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="51" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="storeWaiter.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="storeWaiter.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/resources/bill_board/waiter/storeWaiter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.5">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.35828876">
+              <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
               <folding>
                 <element signature="e#6#94#0#PHP" expanded="true" />
-                <marker date="1497426768396" expanded="true" signature="332:423" placeholder="INSERT INTO `store_waiter_calls`... " />
+                <marker date="1497436133464" expanded="true" signature="332:424" placeholder="INSERT INTO `store_waiter_calls`... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42780748">
+            <state vertical-scroll-proportion="-10.0">
               <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
               <folding />
             </state>
@@ -172,14 +175,14 @@
         <option value="$PROJECT_DIR$/app/spas/config.xml" />
         <option value="$PROJECT_DIR$/app/spas/www/js/app.js" />
         <option value="$PROJECT_DIR$/app/spas/www/js/controllers.js" />
-        <option value="$PROJECT_DIR$/app/spas/www/index.html" />
-        <option value="$PROJECT_DIR$/app/spas/www/js/controllers/RegCtrl.js" />
         <option value="$PROJECT_DIR$/app/spas/www/js/services.js" />
         <option value="$PROJECT_DIR$/api/app.php" />
-        <option value="$PROJECT_DIR$/api/resources/bill_board/feedback/storeFeedback.php" />
         <option value="$PROJECT_DIR$/api/resources/bill_board/order/postOrder.php" />
-        <option value="$PROJECT_DIR$/api/resources/bill_board/waiter/storeWaiter.php" />
         <option value="$PROJECT_DIR$/api/index.php" />
+        <option value="$PROJECT_DIR$/app/spas/www/js/controllers/RegCtrl.js" />
+        <option value="$PROJECT_DIR$/api/resources/bill_board/feedback/storeFeedback.php" />
+        <option value="$PROJECT_DIR$/app/spas/www/index.html" />
+        <option value="$PROJECT_DIR$/api/resources/bill_board/waiter/storeWaiter.php" />
       </list>
     </option>
   </component>
@@ -807,7 +810,13 @@
       <option name="project" value="LOCAL" />
       <updated>1497426837971</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="first">
+      <created>1497435361173</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1497435361173</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1099,14 +1108,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/spas/www/templates/invoice.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="35" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/spas/www/templates/service-list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1135,14 +1136,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="77" selection-start-line="0" selection-start-column="77" selection-end-line="0" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/spas/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.3396225">
-          <caret line="144" column="155" selection-start-line="144" selection-start-column="150" selection-end-line="144" selection-end-column="155" />
           <folding />
         </state>
       </provider>
@@ -1185,16 +1178,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.875">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/resources/bill_board/feedback/storeFeedback.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.875">
+          <caret line="39" column="69" selection-start-line="39" selection-start-column="69" selection-end-line="39" selection-end-column="69" />
+          <folding>
+            <element signature="e#6#94#0#PHP" expanded="true" />
+            <marker date="1497435826432" expanded="true" signature="336:439" placeholder="INSERT INTO `store_ratings`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/spas/www/js/controllers/RegCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-28.48276">
-          <caret line="284" column="27" selection-start-line="284" selection-start-column="17" selection-end-line="284" selection-end-column="27" />
+        <state vertical-scroll-proportion="38.24138">
+          <caret line="113" column="13" selection-start-line="113" selection-start-column="11" selection-end-line="115" selection-end-column="24" />
           <folding>
-            <element signature="e#3752#4985#0" expanded="false" />
-            <element signature="e#5089#5909#0" expanded="false" />
-            <element signature="e#6080#8510#0" expanded="false" />
-            <element signature="e#9094#16623#0" expanded="false" />
+            <element signature="e#3868#5101#0" expanded="false" />
+            <element signature="e#5205#6025#0" expanded="false" />
+            <element signature="e#6196#8626#0" expanded="false" />
+            <element signature="e#9210#16739#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/spas/www/templates/invoice.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.125">
+          <caret line="70" column="57" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/spas/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.875">
+          <caret line="123" column="111" selection-start-line="123" selection-start-column="111" selection-end-line="123" selection-end-column="111" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1211,39 +1247,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/bill_board/waiter/storeWaiter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.5">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.35828876">
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
           <folding>
             <element signature="e#6#94#0#PHP" expanded="true" />
-            <marker date="1497426768396" expanded="true" signature="332:423" placeholder="INSERT INTO `store_waiter_calls`... " />
+            <marker date="1497436133464" expanded="true" signature="332:424" placeholder="INSERT INTO `store_waiter_calls`... " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/resources/bill_board/feedback/storeFeedback.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.875">
-          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-          <folding>
-            <element signature="e#6#94#0#PHP" expanded="true" />
-            <marker date="1497426291500" expanded="true" signature="336:439" placeholder="INSERT INTO `store_ratings`... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.875">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42780748">
-          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>

@@ -109,21 +109,23 @@
                 <div class="row">
                     <div class="col" style="margin-top: -300px;margin-left: 20%" >
 
-
+                        <form ng-submit="submitFeedBack()" name="confirm" >
                         <div ng-show="giveFeedback" style="width: 200%" class="card">
                            <span style="color: black"> Please Rate Us !!! </span>
                             <ionic-ratings ratingsobj='ratingsObject' index='0' style=" font-size: 100px;"></ionic-ratings>
-                        <div style="width: 60%;margin-left: 20%;">
+
+                            <div style="width: 60%;margin-left: 20%;">
                             <label class="item item-input item-stacked-label " >
 
-                            <input type="number" name="name" placeholder="Mobile" ng-model="data.name" ng-minlength="10" ng-maxlength="10" required />
+                            <input type="number" name="name" placeholder="Mobile" ng-model="feedbackD.mobile" ng-minlength="10" ng-maxlength="10" required />
                         </label>
                         </div>
                             <br>
-                            <button class="button  {{ (waiterCalled)?'button-assertive':'button-positive'}} icon ion-speakerphone " ng-click="submitFeedBack()" >Feed</button>
+                            <button type="submit" ng-disabled="confirm.$invalid" class="button  button-positive icon ion-speakerphone "  >Feed</button>
+
 
                         </div>
-
+                    </form>
 
 
                     </div>
