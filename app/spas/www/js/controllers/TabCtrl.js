@@ -36,60 +36,6 @@ angular.module('starter.controllers')
             }
         }, 100);
 
-        if ($localstorage.get('user_id') !== undefined && $localstorage.get('user_id') !== "") {
-            $scope.user = JSON.parse($localstorage.get('user'));
-            $scope.user_id = $localstorage.get('user_id');
-
-        }
-
-
-
-        /*$scope.type = $localstorage.get('type');
-        $scope.name = $localstorage.get('name');*/
-
-        $scope.customer = true;
-        if ($scope.type == "cem") {
-            $scope.cem = true;
-            $scope.customer = false;
-        }
-
-        if ($scope.type != "customer")
-            $scope.customer = false;
-
-        $scope.logout = function () {
-            var logoutConfirmPopup = $ionicPopup.confirm({
-                title: 'Confirm Logout',
-                template: 'Are you sure to LogOut?'
-            });
-
-            logoutConfirmPopup.then(function (res) {
-                if (res) {
-                    console.log('You are sure');
-                    //setObject
-                    $localstorage.set('user', "");
-                    $localstorage.set('services', "");
-                    $localstorage.set('user_id', "");
-
-                    $timeout(function () {
-                        $ionicHistory.clearCache();
-                        $ionicHistory.clearHistory();
-
-
-                    }, 100);
-                    $state.go('reg');
-                } else {
-                    console.log('You are not sure');
-                }
-            });
-        };
-
-        // Open the login modal
-        $scope.share = function () {
-            $cordovaSocialSharing.share("Let's grow fast with technology\n " +
-                "Empower yourself with BT partner tools, lets grow together. " +
-                "http://goo.gl/rLK3s5", "Let's grow fast with technology");
-        };
-
 
     })
 

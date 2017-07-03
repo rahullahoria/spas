@@ -21,7 +21,7 @@
     <preference name="android-targetSdkVersion" value="22" />
     <preference name="BackupWebStorage" value="none" />
     <preference name="SplashScreen" value="screen" />
-    <preference name="SplashScreenDelay" value="5000" />
+    <preference name="SplashScreenDelay" value="10000" />
     <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="StatusBarBackgroundColor" value="#ef473a" />
     <preference name="StatusBarStyle" value="lightcontent" />
@@ -71,7 +71,6 @@
     <allow-navigation href="http://192.168.100.108:8100" />
     <icon src="resources/android/icon/drawable-xhdpi-icon.png" />
     <plugin name="cordova-plugin-autostart" spec="git+https://github.com/ToniKorin/cordova-plugin-autostart.git" />
-    <plugin name="cordova-plugin-boot-launcher" spec="git+https://github.com/rahullahoria/cordova-plugin-boot-launcher.git" />
     <plugin name="cordova-plugin-file" spec="~4.1.1" />
     <plugin name="cordova-plugin-file-transfer" spec="~1.5.1" />
     <plugin name="cordova-plugin-media" spec="^2.4.1" />
