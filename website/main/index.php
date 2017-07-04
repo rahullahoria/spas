@@ -1,3 +1,8 @@
+<?php
+
+include_once "email_form.php";
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -799,6 +804,7 @@ Trapping the right time, where customer is under free time
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
+
                         <div class="row control-group">
                             <div class="form-group col-12 floating-label-form-group controls">
                                 <label>Email Address</label>
@@ -820,6 +826,7 @@ Trapping the right time, where customer is under free time
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
+                        <div class="g-recaptcha" data-sitekey="6LeycR4UAAAAAHh0XsNW8VLpgw3UrrqipVc6Ndqa"></div>
                         <br>
                         <div id="success"></div>
                         <div class="row">
@@ -1139,6 +1146,8 @@ Trapping the right time, where customer is under free time
     <!-- Custom scripts for this theme -->
     <script src="js/vitality.js"></script>
     <script src="js/vitality-mixitup.js"></script>
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
     <!-- build:remove:dist -->
 
