@@ -1142,7 +1142,7 @@ Trapping the right time, where customer is under free time
 
     <!-- build:remove:dist -->
 
-    <script>
+   <!-- <script>
     // Analytics Tracking - DEMO ONLY!
     (function(i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
@@ -1157,7 +1157,7 @@ Trapping the right time, where customer is under free time
     })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-38417733-23', 'auto');
     ga('send', 'pageview');
-    </script>
+    </script>-->
 
     <!-- Style Switcher - FOR DEMO PURPOSES ONLY -->
    <!-- <div id="style-switcher" class="close-style-switcher animated bounce">
