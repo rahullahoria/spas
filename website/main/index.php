@@ -826,7 +826,7 @@ Trapping the right time, where customer is under free time
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
-                        <div class="g-recaptcha" data-sitekey="6LeycR4UAAAAAHh0XsNW8VLpgw3UrrqipVc6Ndqa"></div>
+                        <!--<div class="g-recaptcha" data-sitekey="6LeycR4UAAAAAHh0XsNW8VLpgw3UrrqipVc6Ndqa"></div>-->
                         <br>
                         <div id="success"></div>
                         <div class="row">
