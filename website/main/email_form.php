@@ -8,8 +8,8 @@
 
 
 if(
-   $_POST['g-recaptcha-response'] != ""
-    && $_POST['mobile'] != ""
+   /*$_POST['g-recaptcha-response'] != ""
+    &&*/ $_POST['mobile'] != ""
    ){
     //var_dump($_POST);die();
     $name = $_POST['name'];

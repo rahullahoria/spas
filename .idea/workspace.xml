@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34c6412e-7908-4917-8fda-3bfe85d804c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/website/main/email_form.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/main/index.php" afterPath="$PROJECT_DIR$/website/main/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/main/js/contact_me.js" afterPath="$PROJECT_DIR$/website/main/js/contact_me.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/main/email_form.php" afterPath="$PROJECT_DIR$/website/main/email_form.php" />
     </list>
     <ignored path="spas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,8 +42,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/main/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.132076">
-              <caret line="1149" column="67" selection-start-line="1149" selection-start-column="67" selection-end-line="1149" selection-end-column="67" />
+            <state vertical-scroll-proportion="-2.981132">
+              <caret line="828" column="63" selection-start-line="828" selection-start-column="63" selection-end-line="828" selection-end-column="103" />
               <folding>
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -60,10 +58,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact_me.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="contact_me.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/main/js/contact_me.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34325746">
+            <state vertical-scroll-proportion="0.0">
               <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
               <folding />
             </state>
@@ -94,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="email_form.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="email_form.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website/main/email_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.125">
-              <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.27422303">
+              <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -187,9 +185,9 @@
         <option value="$PROJECT_DIR$/app/spas/www/index.html" />
         <option value="$PROJECT_DIR$/app/spas/www/js/controllers/RegCtrl.js" />
         <option value="$PROJECT_DIR$/website/main/index.html" />
-        <option value="$PROJECT_DIR$/website/main/email_form.php" />
-        <option value="$PROJECT_DIR$/website/main/index.php" />
         <option value="$PROJECT_DIR$/website/main/js/contact_me.js" />
+        <option value="$PROJECT_DIR$/website/main/index.php" />
+        <option value="$PROJECT_DIR$/website/main/email_form.php" />
       </list>
     </option>
   </component>
@@ -527,7 +525,13 @@
       <option name="project" value="LOCAL" />
       <updated>1499158904632</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="first">
+      <created>1499164401208</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1499164401208</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -927,18 +931,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/main/email_form.php">
+    <entry file="file://$PROJECT_DIR$/website/main/js/contact_me.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.125">
-          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/website/main/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.132076">
-          <caret line="1149" column="67" selection-start-line="1149" selection-start-column="67" selection-end-line="1149" selection-end-column="67" />
+        <state vertical-scroll-proportion="-2.981132">
+          <caret line="828" column="63" selection-start-line="828" selection-start-column="63" selection-end-line="828" selection-end-column="103" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -952,10 +956,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/main/js/contact_me.js">
+    <entry file="file://$PROJECT_DIR$/website/main/email_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34325746">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.27422303">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
           <folding />
         </state>
       </provider>
