@@ -79,6 +79,9 @@ include_once "email_form.php";
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
+                        <a class="nav-link page-scroll" href="http://bbloud.com/">Home</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link page-scroll" href="./#about">About</a>
                     </li>
                     <li class="nav-item">
