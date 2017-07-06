@@ -100,8 +100,12 @@ include_once "email_form.php";
                     <!--<li class="nav-item">
                         <a class="nav-link page-scroll" href="#pricing">Pricing</a>
                     </li>-->
+
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary page-scroll" href="http://bbloud.com/admin/">Login</a>
                     </li>
                 </ul>
             </div>
