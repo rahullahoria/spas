@@ -79,17 +79,17 @@ include_once "email_form.php";
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#about">About</a>
+                        <a class="nav-link page-scroll" href="./#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#team">For Advertiser</a>
+                        <a class="nav-link page-scroll" href="/advertisers.php">For Advertiser</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#team">For Billboard Owner</a>
+                        <a class="nav-link page-scroll" href="/bbowners.php">For Billboard Owner</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#services">Products</a>
+                        <a class="nav-link page-scroll" href="./#services">Products</a>
                     </li>
                     <!--<li class="nav-item">
                         <a class="nav-link page-scroll" href="#work">Work</a>
