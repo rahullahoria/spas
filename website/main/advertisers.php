@@ -143,28 +143,28 @@ include_once "email_form.php";
         <div class="row text-center">
             <div class="col-lg-3 col-md-6">
                 <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".2s">
-                    <i class="fa fa-code fa-4x"></i>
+                    <i class="fa fa-users fa-4x"></i>
                     <h3>REACH CUSTOMERS</h3>
                     <p class="mb-0">BBLoud's growing billboard marketplace means you can get your advertising in front of thousands of customers.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".4s">
-                    <i class="fa fa-edit fa-4x"></i>
+                    <i class="fa fa-refresh fa-4x"></i>
                     <h3>FLEXIBLE ADS</h3>
                     <p class="mb-0">Change advertising on the fly to keep ads relevant and promote time-sensitive content.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".6s">
-                    <i class="fa fa-tablet fa-4x"></i>
+                    <i class="fa fa-history fa-4x"></i>
                     <h3>CAMPAIGN MANAGEMENT</h3>
                     <p class="mb-0">Advertisers can plan, execute and monitor ad campaigns in real-time. Start, pause, schedule, and budget campaigns however you like on any number of boards.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="wow fadeIn px-4 h-100" data-wow-delay=".8s">
-                    <i class="fa fa-heart fa-4x"></i>
+                    <i class="fa fa-clone fa-4x"></i>
                     <h3>AUDIENCE INSIGHTS</h3>
                     <p class="mb-0">Users can access pricing, impressions, CPM, GRP, traffic counts, audience demographics, and real-time campaign proof-of-performance data.</p>
                 </div>
@@ -330,7 +330,7 @@ include_once "email_form.php";
             <div class="col-lg-4 wow fadeIn" data-wow-delay=".2s">
                 <div class="media">
                     <div class="pull-left">
-                        <i class="fa fa-clipboard rounded-circle"></i>
+                        <i class="fa fa-smile-o rounded-circle"></i>
                     </div>
                     <div class="media-body">
                         <h3 class="media-heading">Addictively Easy</h3>
@@ -342,7 +342,7 @@ include_once "email_form.php";
             <div class="col-lg-4 wow fadeIn" data-wow-delay=".4s">
                 <div class="media">
                     <div class="pull-left">
-                        <i class="fa fa-pencil rounded-circle"></i>
+                        <i class="fa fa-space-shuttle rounded-circle"></i>
                     </div>
                     <div class="media-body">
                         <h3 class="media-heading">Affordable Ads</h3>
@@ -366,7 +366,7 @@ include_once "email_form.php";
             <div class="col-lg-4 wow fadeIn" data-wow-delay=".2s">
                 <div class="media">
                     <div class="pull-left">
-                        <i class="fa fa-clipboard rounded-circle"></i>
+                        <i class="fa fa-sitemap rounded-circle"></i>
                     </div>
                     <div class="media-body">
                         <h3 class="media-heading">Diversified Billboard Network
@@ -380,7 +380,7 @@ include_once "email_form.php";
             <div class="col-lg-4 wow fadeIn" data-wow-delay=".4s">
                 <div class="media">
                     <div class="pull-left">
-                        <i class="fa fa-pencil rounded-circle"></i>
+                        <i class="fa fa-object-ungroup rounded-circle"></i>
                     </div>
                     <div class="media-body">
                         <h3 class="media-heading">Board Insights</h3>
@@ -392,7 +392,7 @@ include_once "email_form.php";
             <div class="col-lg-4 wow fadeIn" data-wow-delay=".6s">
                 <div class="media">
                     <div class="pull-left">
-                        <i class="fa fa-rocket rounded-circle"></i>
+                        <i class="fa fa-street-view rounded-circle"></i>
                     </div>
                     <div class="media-body">
                         <h3 class="media-heading">Expert Support</h3>

@@ -144,28 +144,28 @@ include_once "email_form.php";
             <div class="row text-center">
                 <div class="col-lg-3 col-md-6">
                     <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".2s">
-                        <i class="fa fa-code fa-4x"></i>
+                        <i class="fa fa-bullhorn fa-4x"></i>
                         <h3>Advertisers</h3>
                         <p class="mb-0">Are you looking to attract new customers, promote your business, stand out from the competition, or reach local customers? Outdoor advertising costs less than radio advertising, TV advertising or print ads on a cost per impression basis and allows you reach the right audience at the right time.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".4s">
-                        <i class="fa fa-edit fa-4x"></i>
+                        <i class="fa fa-desktop fa-4x"></i>
                         <h3>Billboard Owners</h3>
                         <p class="mb-0">Do you want to tap into new small and medium sized business owners, social media and digital advertisers? Free sales tool that enables your LED display or digital billboard for online and 24/7 sales. Join the largest and fastest growing on-line national digital billboard network.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".6s">
-                        <i class="fa fa-tablet fa-4x"></i>
+                        <i class="fa fa-bank fa-4x"></i>
                         <h3>Media Agencies</h3>
                         <p class="mb-0">Finding BillBoard Space made easy by BBLoud. Just Take Ads by brand. Select area, demographics, timing and your budget. Finally Publish. Your brands go live in secs.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="wow fadeIn px-4 h-100" data-wow-delay=".8s">
-                        <i class="fa fa-heart fa-4x"></i>
+                        <i class="fa fa-briefcase fa-4x"></i>
                         <h3>Small and Medium Scale Brands</h3>
                         <p class="mb-0">Attract new customers, promote your business, stand out from the competition, or reach local customers? Outdoor advertising costs less than radio advertising, TV advertising or print ads on a cost per impression basis and allows you reach the right audience at the right time.</p>
                     </div>
@@ -331,15 +331,15 @@ include_once "email_form.php";
                 <div class="col-lg-4 wow fadeIn" data-wow-delay=".2s">
                     <div class="media">
                         <div class="pull-left">
-                            <i class="fa fa-clipboard rounded-circle"></i>
+                            <i class="fa fa-cloud rounded-circle"></i>
                         </div>
                         <div class="media-body">
                             <h3 class="media-heading">Cloud Based Solution</h3>
                             <ul>
-                                <li>Client interview</li>
-                                <li>Gather consumer data</li>
-                                <li>Create content strategy</li>
-                                <li>Analyze research</li>
+                                <li>Cost Effective Branding</li>
+                                <li>Low Maintenance</li>
+                                <li>Fast Updating</li>
+                                <li>Easy Reach</li>
                             </ul>
                         </div>
                     </div>
@@ -348,15 +348,15 @@ include_once "email_form.php";
                 <div class="col-lg-4 wow fadeIn" data-wow-delay=".4s">
                     <div class="media">
                         <div class="pull-left">
-                            <i class="fa fa-pencil rounded-circle"></i>
+                            <i class="fa fa-desktop rounded-circle"></i>
                         </div>
                         <div class="media-body">
                             <h3 class="media-heading">SPAS Box for DBB (Digital Bill Boards)</h3>
                             <ul>
-                                <li>Build wireframe</li>
-                                <li>Gather client feedback</li>
-                                <li>Code development</li>
-                                <li>Marketing review</li>
+                                <li>Plug with TV</li>
+                                <li>Connect to network</li>
+                                <li>Cloud based control (Remotely)</li>
+                                <li>You are ready to get huge #brand paying you to play there ads.</li>
                             </ul>
                         </div>
                     </div>
@@ -365,15 +365,16 @@ include_once "email_form.php";
                 <div class="col-lg-4 wow fadeIn" data-wow-delay=".6s">
                     <div class="media">
                         <div class="pull-left">
-                            <i class="fa fa-rocket rounded-circle"></i>
+                            <i class="fa fa-television rounded-circle"></i>
                         </div>
                         <div class="media-body">
                             <h3 class="media-heading">SPAS Tablets</h3>
                             <ul>
-                                <li>Deploy website</li>
-                                <li>Market product launch</li>
-                                <li>Collect UX data</li>
-                                <li>Quarterly maintenence</li>
+                                <li>Install on Wall</li>
+                                <li>Connect to network</li>
+                                <li>Customer Feedback</li>
+                                <li>Order</li>
+                                <li>Call Waiter</li>
                             </ul>
                         </div>
                     </div>

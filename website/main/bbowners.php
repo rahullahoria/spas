@@ -147,28 +147,28 @@ include_once "email_form.php";
         <div class="row text-center">
             <div class="col-lg-3 col-md-6">
                 <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".2s">
-                    <i class="fa fa-code fa-4x"></i>
+                    <i class="fa fa-users fa-4x"></i>
                     <h3>REACH CUSTOMERS</h3>
                     <p class="mb-0">BBLoud marketing and sales will boost your board's visibility to hundreds of new advertisers.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".4s">
-                    <i class="fa fa-edit fa-4x"></i>
+                    <i class="fa fa-trophy fa-4x"></i>
                     <h3>INCREASE REVENUE</h3>
                     <p class="mb-0">Take advantage of schedule gaps and fill your excess inventory through BBLoud's bidding marketplace.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".6s">
-                    <i class="fa fa-tablet fa-4x"></i>
+                    <i class="fa fa-refresh fa-4x"></i>
                     <h3>AUTOMATIC SALES</h3>
                     <p class="mb-0">No more pushing paper and answering calls, BBLoud sales are automated from purchase to payment.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="wow fadeIn px-4 h-100" data-wow-delay=".8s">
-                    <i class="fa fa-heart fa-4x"></i>
+                    <i class="fa fa-rupee fa-4x"></i>
                     <h3>GET PAID</h3>
                     <p class="mb-0">Stop chasing accounts receivable and get paid on time. All BBLoud transactions are pre-paid.</p>
                 </div>
@@ -343,7 +343,7 @@ include_once "email_form.php";
             <div class="col-lg-4 wow fadeIn" data-wow-delay=".2s">
                 <div class="media">
                     <div class="pull-left">
-                        <i class="fa fa-clipboard rounded-circle"></i>
+                        <i class="fa fa-maxcdn rounded-circle"></i>
                     </div>
                     <div class="media-body">
                         <h3 class="media-heading">Maximize Your Reach</h3>
@@ -355,7 +355,7 @@ include_once "email_form.php";
             <div class="col-lg-4 wow fadeIn" data-wow-delay=".4s">
                 <div class="media">
                     <div class="pull-left">
-                        <i class="fa fa-pencil rounded-circle"></i>
+                        <i class="fa fa-wifi rounded-circle"></i>
                     </div>
                     <div class="media-body">
                         <h3 class="media-heading">Expanded Resources</h3>
@@ -367,7 +367,7 @@ include_once "email_form.php";
             <div class="col-lg-4 wow fadeIn" data-wow-delay=".6s">
                 <div class="media">
                     <div class="pull-left">
-                        <i class="fa fa-rocket rounded-circle"></i>
+                        <i class="fa fa-anchor rounded-circle"></i>
                     </div>
                     <div class="media-body">
                         <h3 class="media-heading">New Sales Leads</h3>
@@ -379,7 +379,7 @@ include_once "email_form.php";
             <div class="col-lg-4 wow fadeIn" data-wow-delay=".2s">
                 <div class="media">
                     <div class="pull-left">
-                        <i class="fa fa-clipboard rounded-circle"></i>
+                        <i class="fa fa-briefcase rounded-circle"></i>
                     </div>
                     <div class="media-body">
                         <h3 class="media-heading">More Business at Better Rates
@@ -393,7 +393,7 @@ include_once "email_form.php";
             <div class="col-lg-4 wow fadeIn" data-wow-delay=".4s">
                 <div class="media">
                     <div class="pull-left">
-                        <i class="fa fa-pencil rounded-circle"></i>
+                        <i class="fa fa-sitemap rounded-circle"></i>
                     </div>
                     <div class="media-body">
                         <h3 class="media-heading">Diversified Client Base</h3>
@@ -405,10 +405,10 @@ include_once "email_form.php";
             <div class="col-lg-4 wow fadeIn" data-wow-delay=".6s">
                 <div class="media">
                     <div class="pull-left">
-                        <i class="fa fa-rocket rounded-circle"></i>
+                        <i class="fa fa-heart rounded-circle"></i>
                     </div>
                     <div class="media-body">
-                        <h3 class="media-heading">Addictively Easy</h3>
+                        <h3 class="media-heading">Additively Easy</h3>
                         Our customers rave about buying billboards using BBLoud. Moreover, today’s ad buyers are online and to win and compete you need to be online too. BBLoud helps you attract new buyers who appreciate a feature rich solution that allows guaranteed and non-guaranteed ad buys and 24/7/365 online buying. Billboard advertising has never been his easy.
                     </div>
                 </div>
