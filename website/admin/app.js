@@ -45,25 +45,6 @@
 
             })
 
-            .when('/exams', {
-                controller: 'ExamsController',
-                templateUrl: 'exams/exams.view.html',
-                controllerAs: 'vm'
-
-            })
-
-            .when('/test', {
-                controller: 'TestController',
-                templateUrl: 'test/test.view.html',
-                controllerAs: 'vm'
-
-            })
-            .when('/test/:test/result', {
-                controller: 'ResultController',
-                templateUrl: 'result/result.view.html',
-                controllerAs: 'vm'
-
-            })
             .when('/prepare/:topic_name/:topic_id', {
                 controller: 'PrepareController',
                 templateUrl: 'prepare/prepare.view.html',

@@ -73,6 +73,8 @@
             });
         }
 
+        vm.adv.days = 0;
+        vm.adv.stores = 0;
 
         vm.logout = function(){
             vm.inUser = null;

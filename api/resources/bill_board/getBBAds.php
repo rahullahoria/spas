@@ -9,8 +9,8 @@
 function getBBAds($id){
 
     $sql = "SELECT vedio_id
-FROM `ads` ORDER BY rand()
-LIMIT 0 , 1";
+                FROM `ads` ORDER BY rand()
+                LIMIT 0 , 1";
 
     try{
         $db = getDB();

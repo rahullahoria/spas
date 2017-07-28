@@ -5,7 +5,7 @@ angular.module('starter.controllers')
 
 
     .controller('RegCtrl', function ($sce,$scope, $state, $ionicLoading, $timeout, $ionicHistory, $cordovaGeolocation, $localstorage,
-                                     $ionicPlatform,$cordovaFile, $cordovaFileTransfer, $ionicPopup, SPAS, $ionicNavBarDelegate) {
+                                     $ionicPlatform, $cordovaCamera, $cordovaFile, $cordovaFileTransfer, $ionicPopup, SPAS, $ionicNavBarDelegate) {
 
 
         console.log("regcont started");
@@ -14,6 +14,33 @@ angular.module('starter.controllers')
         $scope.data = {};
         $scope.feedbackD = {};
         $scope.feedbackD.rating = 4;
+
+        $scope.captureImage = function() {
+            var options = {
+                x: 0,
+                y: 0,
+                width: window.screen.width,
+                height: window.screen.height,
+                camera: CameraPreview.CAMERA_DIRECTION.BACK,
+                toBack: false,
+                tapPhoto: true,
+                tapFocus: false,
+                previewDrag: false
+            };
+
+            CameraPreview.startCamera(options);
+
+            CameraPreview.takePicture({width:640, height:640, quality: 85}, function(base64PictureData){
+                /*
+                 base64PictureData is base64 encoded jpeg image. Use this data to store to a file or upload.
+                 Its up to the you to figure out the best way to save it to disk or whatever for your application.
+                 */
+
+                // One simple example is if you are going to use it inside an HTML img src attribute then you would do the following:
+                imageSrcData = 'data:image/jpeg;base64,' +base64PictureData;
+                $('img#my-img').attr('src', imageSrcData);
+            });
+        }
 
         $ionicNavBarDelegate.showBackButton(false);
 
@@ -87,6 +114,8 @@ angular.module('starter.controllers')
         $scope.pwdError = false;
         $scope.first = false;
         $scope.playMyVideo = function(){
+
+            $scope.captureImage();
 
 
             var myVideo = document.getElementsByTagName('video')[0];
