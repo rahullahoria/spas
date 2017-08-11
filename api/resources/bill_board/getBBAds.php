@@ -30,7 +30,7 @@ function getBBAds($id){
             $out = getFiller($db);
         }
         else{
-            $out = getAd($db);
+            $out = getAd($db,$id);
         }
 
         $out[0]->type = ($type=='ad')?"filler":"ad";

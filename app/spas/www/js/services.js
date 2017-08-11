@@ -4,11 +4,13 @@ angular.module('starter.services', [])
         var urlRS = "https://api.ragnar.shatkonlabs.com";
         var urlSPAS = "https://api.spas.shatkonlabs.com";
         return {
-            getAd: function () {
+            getAd: function (id,last) {
                 // $http returns a promise, which has a then function, which also returns a promise
-                var promise = $http.get(urlSPAS + '/bill_board/1').then(function (response) {
+                console.log(urlSPAS + '/bill_board/'+id+'?type='+last.type+'&last_ad_id='+last.vedio_id);
+
+                var promise = $http.get(urlSPAS + '/bill_board/'+id+'?type='+last.type+'&last_ad_id='+last.vedio_id).then(function (response) {
                     // The then function here is an opportunity to modify the response
-                    //console.log(response);
+                    console.log(urlSPAS + '/bill_board/'+id+'?type='+last.type+'&last_ad_id='+last.vedio_id,JSON.stringify(response));
                     // The return value gets picked up by the then in the controller.
                     return response.data;
                 });

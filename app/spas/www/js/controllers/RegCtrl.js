@@ -15,6 +15,16 @@ angular.module('starter.controllers')
         $scope.feedbackD = {};
         $scope.feedbackD.rating = 4;
 
+        if($localstorage.get('history')){
+            $scope.history = JSON.parse($localstorage.get('history'));
+            $scope.lastPlayed = $localstorage.get('lastPlayed');
+
+        }
+        else {
+            $scope.history = [];
+            $scope.lastPlayed = -1;
+        }
+
         $scope.captureImage = function() {
             var options = {
                 x: 0,
@@ -173,12 +183,18 @@ angular.module('starter.controllers')
 
             }
 
-            SPAS.getAd()
+            SPAS.getAd(1,($scope.history[$scope.lastPlayed])?$scope.history[$scope.lastPlayed]:{type:'filler',vedio_id:-1})
                 .then(function (d) {
 
                     //var vidURL = "http://api.file-dog.shatkonlabs.com/files/rahul/"+ d.ads[0].vedio_id;
                     console.log("video Url", JSON.stringify($scope.vidoURL),JSON.stringify(window.location));
                     //$scope.getFile(d.ads[0].vedio_id);
+
+                    $scope.lastPlayed = ($scope.lastPlayed+1)/20;
+                    $scope.history[$scope.lastPlayed] = d.ads[0];
+                    $localstorage.set('history', JSON.stringify($scope.history));
+                    $localstorage.set('lastPlayed', $scope.lastPlayed);
+
                     var id = d.ads[0].vedio_id;
 
                     var url = "http://api.file-dog.shatkonlabs.com/files/rahul/"+id;
@@ -192,6 +208,8 @@ angular.module('starter.controllers')
                         .then(function (success) {
                             // success
                             $scope.vidoURL = targetPath;
+                            $scope.history[$scope.lastPlayed].vidoURL = targetPath;
+                            $localstorage.set('history', JSON.stringify($scope.history));
 
                             $scope.playMyVideo();
 
@@ -221,6 +239,25 @@ angular.module('starter.controllers')
 
                 }, function(error){
                     console.error("The following error occurred: "+error);
+
+                    if($scope.lastPlayed  == -1){
+                        $scope.vidoURL ="http://api.file-dog.shatkonlabs.com/files/rahul/2019";
+
+                    }
+                    else {
+
+                        //geting new lastPlayed
+                        var temp = Math.floor(Math.random() * $scope.history.length) + 0;
+                        while (temp == $scope.lastPlayed && $scope.history[temp].vidoURL)
+                            temp = Math.floor(Math.random() * $scope.history.length) + 0;
+
+                        $scope.lastPlayed = temp;
+                        $localstorage.set('lastPlayed', $scope.lastPlayed);
+
+
+                        $scope.vidoURL = $scope.history[$scope.lastPlayed].vidoURL;
+                    }
+
                     $scope.playMyVideo();
                 });
 

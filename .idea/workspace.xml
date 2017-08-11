@@ -6,7 +6,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/bill_board/getBBAds.php" afterPath="$PROJECT_DIR$/api/resources/bill_board/getBBAds.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spas/config.xml" afterPath="$PROJECT_DIR$/app/spas/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spas/www/js/controllers/RegCtrl.js" afterPath="$PROJECT_DIR$/app/spas/www/js/controllers/RegCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/admin/member/member.view.html" afterPath="$PROJECT_DIR$/website/admin/member/member.view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spas/www/js/services.js" afterPath="$PROJECT_DIR$/app/spas/www/js/services.js" />
     </list>
     <ignored path="spas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,49 +28,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/QR-Open/www/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="82" column="25" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="member.view.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website/admin/member/member.view.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="248" column="52" selection-start-line="248" selection-start-column="52" selection-end-line="248" selection-end-column="52" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="createAds.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/resources/ads/createAds.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1495543895532" expanded="true" signature="338:559" placeholder="INSERT INTO `ads`... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="getBBAds.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/resources/bill_board/getBBAds.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.56284153">
-              <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+            <state vertical-scroll-proportion="-0.20658135">
+              <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
               <folding>
-                <marker date="1502455090880" expanded="true" signature="248:307" placeholder="INSERT INTO `bb_logs`... " />
-                <marker date="1502455090880" expanded="true" signature="925:1104" placeholder="SELECT vedio... ads" />
-                <marker date="1502455090880" expanded="true" signature="1338:1440" placeholder="SELECT `vedi... fillers" />
+                <marker date="1502460308936" expanded="true" signature="248:307" placeholder="INSERT INTO `bb_logs`... " />
+                <marker date="1502460308936" expanded="true" signature="929:1108" placeholder="SELECT vedio... ads" />
+                <marker date="1502460308936" expanded="true" signature="1342:1444" placeholder="SELECT `vedi... fillers" />
               </folding>
             </state>
           </provider>
@@ -89,8 +55,48 @@
       <file leaf-file-name="RegCtrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/spas/www/js/controllers/RegCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+            <state vertical-scroll-proportion="-20.172413">
+              <caret line="258" column="21" selection-start-line="258" selection-start-column="21" selection-end-line="258" selection-end-column="21" />
+              <folding>
+                <element signature="e#859#1944#0" expanded="false" />
+                <element signature="e#2030#2538#0" expanded="false" />
+                <element signature="e#2598#2744#0" expanded="false" />
+                <element signature="e#2781#2880#0" expanded="false" />
+                <element signature="e#2916#2961#0" expanded="false" />
+                <element signature="e#3007#3556#0" expanded="false" />
+                <element signature="e#3592#3971#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/spas/www/js/services.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.137931">
+              <caret line="8" column="103" selection-start-line="8" selection-start-column="103" selection-end-line="8" selection-end-column="103" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getAllAds.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/resources/ads/getAllAds.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1495543199724" expanded="true" signature="130:162" placeholder="SELECT * FRO... ads" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServiceListCtrl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/spas/www/js/controllers/ServiceListCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.827586">
+              <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -164,7 +170,6 @@
         <option value="$PROJECT_DIR$/website/admin/login/login.view.html" />
         <option value="$PROJECT_DIR$/app/spas/www/js/app.js" />
         <option value="$PROJECT_DIR$/app/spas/www/js/controllers.js" />
-        <option value="$PROJECT_DIR$/app/spas/www/js/services.js" />
         <option value="$PROJECT_DIR$/api/resources/bill_board/order/postOrder.php" />
         <option value="$PROJECT_DIR$/api/resources/bill_board/feedback/storeFeedback.php" />
         <option value="$PROJECT_DIR$/api/resources/bill_board/waiter/storeWaiter.php" />
@@ -211,6 +216,7 @@
         <option value="$PROJECT_DIR$/app/QR-Open/www/index.html" />
         <option value="$PROJECT_DIR$/website/admin/member/member.view.html" />
         <option value="$PROJECT_DIR$/app/spas/www/js/controllers/RegCtrl.js" />
+        <option value="$PROJECT_DIR$/app/spas/www/js/services.js" />
         <option value="$PROJECT_DIR$/api/resources/bill_board/getBBAds.php" />
       </list>
     </option>
@@ -734,7 +740,13 @@
       <option name="project" value="LOCAL" />
       <updated>1501231508957</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="first">
+      <created>1502455314156</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1502455314156</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -743,6 +755,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39318183" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -750,7 +763,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -789,31 +801,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/spas/www/js/controllers/TabCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/spas/www/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/spas/www/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="126" column="13" selection-start-line="126" selection-start-column="1" selection-end-line="126" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/spas/www/js/controllers/ServiceListCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1087,7 +1078,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="248" column="52" selection-start-line="248" selection-start-column="52" selection-end-line="248" selection-end-column="52" />
           <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1152,22 +1143,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/spas/www/js/controllers/RegCtrl.js">
+    <entry file="file://$PROJECT_DIR$/app/spas/www/js/controllers/ServiceListCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.827586">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/resources/ads/getAllAds.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1495543199724" expanded="true" signature="130:162" placeholder="SELECT * FRO... ads" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/spas/www/js/controllers/RegCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.172413">
+          <caret line="258" column="21" selection-start-line="258" selection-start-column="21" selection-end-line="258" selection-end-column="21" />
+          <folding>
+            <element signature="e#859#1944#0" expanded="false" />
+            <element signature="e#2030#2538#0" expanded="false" />
+            <element signature="e#2598#2744#0" expanded="false" />
+            <element signature="e#2781#2880#0" expanded="false" />
+            <element signature="e#2916#2961#0" expanded="false" />
+            <element signature="e#3007#3556#0" expanded="false" />
+            <element signature="e#3592#3971#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/spas/www/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.137931">
+          <caret line="8" column="103" selection-start-line="8" selection-start-column="103" selection-end-line="8" selection-end-column="103" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/bill_board/getBBAds.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56284153">
-          <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+        <state vertical-scroll-proportion="-0.20658135">
+          <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
           <folding>
-            <marker date="1502455090880" expanded="true" signature="248:307" placeholder="INSERT INTO `bb_logs`... " />
-            <marker date="1502455090880" expanded="true" signature="925:1104" placeholder="SELECT vedio... ads" />
-            <marker date="1502455090880" expanded="true" signature="1338:1440" placeholder="SELECT `vedi... fillers" />
+            <marker date="1502460308936" expanded="true" signature="248:307" placeholder="INSERT INTO `bb_logs`... " />
+            <marker date="1502460308936" expanded="true" signature="929:1108" placeholder="SELECT vedio... ads" />
+            <marker date="1502460308936" expanded="true" signature="1342:1444" placeholder="SELECT `vedi... fillers" />
           </folding>
         </state>
       </provider>
