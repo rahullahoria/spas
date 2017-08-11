@@ -143,6 +143,8 @@
 
                         </div>
 
+                        <div class="row">
+                            <div class="col-md-4">
                         <div class="form-group" ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }">
 
                             <select name="exam_id"  id="exam_id" class="form-control" ng-model="vm.adv.gender" required>
@@ -152,15 +154,16 @@
                                 <option value="other" >Other</option>
                             </select>
                         </div>
+                                </div>
 
-                        <div class="row">
-                            <div class="col-md-6">
+
+                            <div class="col-md-4">
                                 <div class="form-group" ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }">
                                     <input class="form-control" placeholder="Target Lower Age" type="number" name="username" id="username" ng-model="vm.adv.age_lower" required >
 
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="form-group" ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }">
                                     <input class="form-control" placeholder="Target Higher Age" type="number" name="username" id="username" ng-model="vm.adv.age_higher" required >
 
@@ -241,9 +244,9 @@
                     </fieldset>
                 </form>
 
-                <div class="form-group">
+                <div class="form-group" >
                     <label for="video_file">Upload Adv. Video</label>
-                    <input type="file" name="pic_id" id="video_file" class="form-control" ng-hide="vm.login" file-model="vm.adv.file"/>
+                    <input style="min-height: 50px;" type="file" name="pic_id" id="video_file" class="form-control" ng-hide="vm.login" file-model="vm.adv.file"/>
                     <button  class="btn btn-primary" ng-disabled="vm.videoUploading" ng-click="vm.uploadVideo();">Upload</button>
                     <img ng-if="vm.processing" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
 

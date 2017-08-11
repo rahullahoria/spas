@@ -115,7 +115,7 @@ angular.module('starter.controllers')
         $scope.first = false;
         $scope.playMyVideo = function(){
 
-            $scope.captureImage();
+            //$scope.captureImage();
 
 
             var myVideo = document.getElementsByTagName('video')[0];
