@@ -2,11 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34c6412e-7908-4917-8fda-3bfe85d804c0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/spas/www/img/splash.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spas/resources/android/icon/drawable-hdpi-icon.png" afterPath="$PROJECT_DIR$/app/spas/resources/android/icon/drawable-hdpi-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spas/resources/android/icon/drawable-ldpi-icon.png" afterPath="$PROJECT_DIR$/app/spas/resources/android/icon/drawable-ldpi-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spas/resources/android/icon/drawable-mdpi-icon.png" afterPath="$PROJECT_DIR$/app/spas/resources/android/icon/drawable-mdpi-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spas/resources/android/icon/drawable-xhdpi-icon.png" afterPath="$PROJECT_DIR$/app/spas/resources/android/icon/drawable-xhdpi-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spas/resources/android/icon/drawable-xxhdpi-icon.png" afterPath="$PROJECT_DIR$/app/spas/resources/android/icon/drawable-xxhdpi-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spas/resources/android/icon/drawable-xxxhdpi-icon.png" afterPath="$PROJECT_DIR$/app/spas/resources/android/icon/drawable-xxxhdpi-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spas/resources/android/splash/drawable-port-hdpi-screen.png" afterPath="$PROJECT_DIR$/app/spas/resources/android/splash/drawable-port-hdpi-screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spas/resources/android/splash/drawable-port-ldpi-screen.png" afterPath="$PROJECT_DIR$/app/spas/resources/android/splash/drawable-port-ldpi-screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spas/resources/android/splash/drawable-port-mdpi-screen.png" afterPath="$PROJECT_DIR$/app/spas/resources/android/splash/drawable-port-mdpi-screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spas/resources/icon.png" afterPath="$PROJECT_DIR$/app/spas/resources/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spas/resources/splash.png" afterPath="$PROJECT_DIR$/app/spas/resources/splash.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spas/www/img/icon.png" afterPath="$PROJECT_DIR$/app/spas/www/img/icon.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/bill_board/getBBAds.php" afterPath="$PROJECT_DIR$/api/resources/bill_board/getBBAds.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spas/config.xml" afterPath="$PROJECT_DIR$/app/spas/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spas/www/index.html" afterPath="$PROJECT_DIR$/app/spas/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spas/www/js/controllers/RegCtrl.js" afterPath="$PROJECT_DIR$/app/spas/www/js/controllers/RegCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/spas/www/js/services.js" afterPath="$PROJECT_DIR$/app/spas/www/js/services.js" />
     </list>
     <ignored path="spas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,12 +44,12 @@
       <file leaf-file-name="getBBAds.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/resources/bill_board/getBBAds.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.20658135">
-              <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.3715847">
+              <caret line="51" column="83" selection-start-line="51" selection-start-column="83" selection-end-line="51" selection-end-column="83" />
               <folding>
-                <marker date="1502460308936" expanded="true" signature="248:307" placeholder="INSERT INTO `bb_logs`... " />
-                <marker date="1502460308936" expanded="true" signature="929:1108" placeholder="SELECT vedio... ads" />
-                <marker date="1502460308936" expanded="true" signature="1342:1444" placeholder="SELECT `vedi... fillers" />
+                <marker date="1502534031760" expanded="true" signature="248:307" placeholder="INSERT INTO `bb_logs`... " />
+                <marker date="1502534031760" expanded="true" signature="929:1243" placeholder="SELECT vedio... ads" />
+                <marker date="1502534031760" expanded="true" signature="1477:1579" placeholder="SELECT `vedi... fillers" />
               </folding>
             </state>
           </provider>
@@ -45,18 +58,25 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/spas/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+            <state vertical-scroll-proportion="-12.583333">
+              <caret line="96" column="50" selection-start-line="96" selection-start-column="50" selection-end-line="96" selection-end-column="50" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="icon.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/spas/www/img/icon.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="RegCtrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/spas/www/js/controllers/RegCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.172413">
-              <caret line="258" column="21" selection-start-line="258" selection-start-column="21" selection-end-line="258" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="243" column="96" selection-start-line="243" selection-start-column="96" selection-end-line="243" selection-end-column="96" />
               <folding>
                 <element signature="e#859#1944#0" expanded="false" />
                 <element signature="e#2030#2538#0" expanded="false" />
@@ -73,7 +93,7 @@
       <file leaf-file-name="services.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/spas/www/js/services.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.137931">
+            <state vertical-scroll-proportion="0.0">
               <caret line="8" column="103" selection-start-line="8" selection-start-column="103" selection-end-line="8" selection-end-column="103" />
               <folding />
             </state>
@@ -83,7 +103,7 @@
       <file leaf-file-name="getAllAds.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/resources/ads/getAllAds.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <marker date="1495543199724" expanded="true" signature="130:162" placeholder="SELECT * FRO... ads" />
@@ -95,22 +115,9 @@
       <file leaf-file-name="ServiceListCtrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/spas/www/js/controllers/ServiceListCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.827586">
+            <state vertical-scroll-proportion="0.0">
               <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="41" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="checkOtp.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/resources/user/checkOtp.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1488775337000" expanded="true" signature="151:312" placeholder="SELECT a.`us... users" />
-                <marker date="1488775337000" expanded="true" signature="337:388" placeholder="update users... " />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -187,7 +194,6 @@
         <option value="$PROJECT_DIR$/app/spas/config.xml" />
         <option value="$PROJECT_DIR$/app/spas/platforms/android/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/spas/www/css/style.css" />
-        <option value="$PROJECT_DIR$/app/spas/www/index.html" />
         <option value="$PROJECT_DIR$/website/main/index.html" />
         <option value="$PROJECT_DIR$/website/main/js/contact_me.js" />
         <option value="$PROJECT_DIR$/website/main/email_form.php" />
@@ -215,8 +221,9 @@
         <option value="$PROJECT_DIR$/app/QR-Open/www/js/app.js" />
         <option value="$PROJECT_DIR$/app/QR-Open/www/index.html" />
         <option value="$PROJECT_DIR$/website/admin/member/member.view.html" />
-        <option value="$PROJECT_DIR$/app/spas/www/js/controllers/RegCtrl.js" />
         <option value="$PROJECT_DIR$/app/spas/www/js/services.js" />
+        <option value="$PROJECT_DIR$/app/spas/www/js/controllers/RegCtrl.js" />
+        <option value="$PROJECT_DIR$/app/spas/www/index.html" />
         <option value="$PROJECT_DIR$/api/resources/bill_board/getBBAds.php" />
       </list>
     </option>
@@ -260,7 +267,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -407,6 +414,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value=".idea" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -529,7 +562,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -539,13 +572,14 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/website/admin/navbar" />
-      <recent name="$PROJECT_DIR$/api/resources/user" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/spas/www/img" />
       <recent name="$PROJECT_DIR$/website/main/img" />
       <recent name="$PROJECT_DIR$/app/waiters/www/img" />
+      <recent name="$PROJECT_DIR$/api/resources/user" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/website/admin/navbar" />
       <recent name="$PROJECT_DIR$/api/resources/user" />
     </key>
   </component>
@@ -746,16 +780,21 @@
       <option name="project" value="LOCAL" />
       <updated>1502455314156</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="first">
+      <created>1502460331291</created>
+      <option name="number" value="00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1502460331291</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="727" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39318183" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39924243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -763,6 +802,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -801,13 +841,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/spas/www/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="126" column="13" selection-start-line="126" selection-start-column="1" selection-end-line="126" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/spas/platforms/android/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1069,7 +1102,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="82" column="25" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1077,9 +1109,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="248" column="52" selection-start-line="248" selection-start-column="52" selection-end-line="248" selection-end-column="52" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1087,9 +1116,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1495543895532" expanded="true" signature="338:559" placeholder="INSERT INTO `ads`... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1097,10 +1123,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1488775337000" expanded="true" signature="151:312" placeholder="SELECT a.`us... users" />
-            <marker date="1488775337000" expanded="true" signature="337:388" placeholder="update users... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1135,17 +1157,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/spas/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/spas/www/js/controllers/ServiceListCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.827586">
+        <state vertical-scroll-proportion="0.0">
           <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="41" />
           <folding />
         </state>
@@ -1161,10 +1175,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/spas/www/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="103" selection-start-line="8" selection-start-column="103" selection-end-line="8" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/spas/www/js/controllers/RegCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.172413">
-          <caret line="258" column="21" selection-start-line="258" selection-start-column="21" selection-end-line="258" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="243" column="96" selection-start-line="243" selection-start-column="96" selection-end-line="243" selection-end-column="96" />
           <folding>
             <element signature="e#859#1944#0" expanded="false" />
             <element signature="e#2030#2538#0" expanded="false" />
@@ -1177,22 +1199,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/spas/www/js/services.js">
+    <entry file="file://$PROJECT_DIR$/app/spas/www/img/icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/spas/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.137931">
-          <caret line="8" column="103" selection-start-line="8" selection-start-column="103" selection-end-line="8" selection-end-column="103" />
+        <state vertical-scroll-proportion="-12.583333">
+          <caret line="96" column="50" selection-start-line="96" selection-start-column="50" selection-end-line="96" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/bill_board/getBBAds.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.20658135">
-          <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.3715847">
+          <caret line="51" column="83" selection-start-line="51" selection-start-column="83" selection-end-line="51" selection-end-column="83" />
           <folding>
-            <marker date="1502460308936" expanded="true" signature="248:307" placeholder="INSERT INTO `bb_logs`... " />
-            <marker date="1502460308936" expanded="true" signature="929:1108" placeholder="SELECT vedio... ads" />
-            <marker date="1502460308936" expanded="true" signature="1342:1444" placeholder="SELECT `vedi... fillers" />
+            <marker date="1502534031760" expanded="true" signature="248:307" placeholder="INSERT INTO `bb_logs`... " />
+            <marker date="1502534031760" expanded="true" signature="929:1243" placeholder="SELECT vedio... ads" />
+            <marker date="1502534031760" expanded="true" signature="1477:1579" placeholder="SELECT `vedi... fillers" />
           </folding>
         </state>
       </provider>

@@ -241,7 +241,7 @@ angular.module('starter.controllers')
                     console.error("The following error occurred: "+error);
 
                     if($scope.lastPlayed  == -1){
-                        $scope.vidoURL ="http://api.file-dog.shatkonlabs.com/files/rahul/2019";
+                        $scope.vidoURL ="http://api.file-dog.shatkonlabs.com/files/rahul/2020   ";
 
                     }
                     else {

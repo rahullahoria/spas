@@ -47,7 +47,9 @@ function getBBAds($id){
 function getAd($db, $bbId){
     $sql = "SELECT a.vedio_id
                 FROM `ads` as a join  `ads_bill_board` as b
-                WHERE a.id = b.ads_id and b.bb_id = :bbId ORDER BY rand()
+                WHERE a.id = b.ads_id
+                and b.bb_id = :bbId
+                and a.vedio_id != (select `ads_id` from bb_logs where bb_id = :bbId order by `creation` desc limit 1)  ORDER BY rand()
                 LIMIT 0 , 1";
 
     $stmt = $db->prepare($sql);
