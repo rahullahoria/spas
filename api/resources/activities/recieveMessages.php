@@ -21,6 +21,8 @@ function recieveMessages(){
     $sql = "INSERT INTO `activity_messages`(`mobile`, `message`,`bb_id`, `activity_id`, `state`)
               VALUES (:mobile, :message, :bb_id, :activity_id,:state);";
 
+    $sqlReply = "SELECT `reply` FROM `activite_states` WHERE `activite_id` = :activity_id and `state` = :state";
+
     try {
         $db = getDB();
 
@@ -37,6 +39,16 @@ function recieveMessages(){
         $stmt->execute();
 
         $feed->id = $db->lastInsertId();
+
+        if($feed->id){
+            $stmt = $db->prepare($sqlReply);
+
+            $stmt->bindParam("activity_id", $feed->activity_id);
+            $stmt->bindParam("state", $feed->state);
+
+            $stmt->execute();
+            $feed->reply = $stmt->fetchAll(PDO::FETCH_OBJ)[0]->reply;
+        }
 
 
 
