@@ -26,6 +26,7 @@ $app->response->headers->set('Content-Type', 'application/json');
 //auth
 $app->post('/auth', 'userAuth');//user,org,temp_user{mobile,mac}
 $app->post('/users', 'regUser');
+$app->post('/activity_message', 'recieveMessages');
 $app->post('/ads', 'createAds');
 $app->get('/ads','getAllAds');
 $app->get('/bill_board/:id','getBBAds');

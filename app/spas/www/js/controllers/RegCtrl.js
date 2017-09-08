@@ -25,6 +25,21 @@ angular.module('starter.controllers')
             $scope.lastPlayed = -1;
         }
 
+        $scope.lastActiveTime = new Date();
+
+        //$window.location.reload();
+
+        $scope.watchDog = function(){
+            $timeout( function () {
+
+                if((new Date() -$scope.lastActiveTime ) > 120000 )
+                    $window.location.reload();
+                else
+                    $scope.watchDog();
+
+            }, 60000 );
+        };
+
         $scope.captureImage = function() {
             var options = {
                 x: 0,
@@ -126,6 +141,7 @@ angular.module('starter.controllers')
         $scope.playMyVideo = function(){
 
             //$scope.captureImage();
+            $scope.lastActiveTime = new Date();
 
 
             var myVideo = document.getElementsByTagName('video')[0];
@@ -183,7 +199,7 @@ angular.module('starter.controllers')
 
             }
 
-            SPAS.getAd(1,($scope.history[$scope.lastPlayed])?$scope.history[$scope.lastPlayed]:{type:'filler',vedio_id:-1})
+            SPAS.getAd(11,($scope.history[$scope.lastPlayed])?$scope.history[$scope.lastPlayed]:{type:'filler',vedio_id:-1})
                 .then(function (d) {
 
                     //var vidURL = "http://api.file-dog.shatkonlabs.com/files/rahul/"+ d.ads[0].vedio_id;
@@ -290,9 +306,15 @@ angular.module('starter.controllers')
 
 
         $ionicPlatform.ready(function () {
-            if(window.Connection) {
+
+            $timeout(function () {
+                $scope.getFile();
+                $scope.watchDog();
+
+            }, 5000);
+           /* if(window.Connection) {
                 if(navigator.connection.type == Connection.NONE) {
-                    /*$ionicPopup.confirm({
+                    /!*$ionicPopup.confirm({
                             title: "Internet Disconnected",
                             content: "The internet is disconnected on your device."
                         })
@@ -300,11 +322,12 @@ angular.module('starter.controllers')
                             if(!result) {
                                 ionic.Platform.exitApp();
                             }
-                        });*/
+                        });*!/
                 }
                 else {
                     $timeout(function () {
                         $scope.getFile();
+
                     }, 10000);
                 }
             }
@@ -312,7 +335,7 @@ angular.module('starter.controllers')
                 $timeout(function () {
                     $scope.getFile();
                 }, 10000);
-            }
+            }*/
 
 
 
