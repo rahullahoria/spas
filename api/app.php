@@ -37,6 +37,8 @@ $app->get('/bill_board/:id/waiter/:storeId','getWaiterCalls');
 
 $app->get('/store/:storeId/waiter/:waiterId/table/:tableId','callAccepted');
 
+$app->post('/sensor_reader','insertSensorReading');
+
 $app->post('/bill_board/:id/feedback','storeFeedback');
 
 $app->get('/user/:mobile/otp/:otp', 'checkOtp');

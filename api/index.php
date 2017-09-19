@@ -26,6 +26,8 @@ require_once "resources/bill_board/waiter/storeWaiter.php";
 require_once "resources/bill_board/waiter/getWaiterCalls.php";
 require_once "resources/bill_board/waiter/callAccepted.php";
 
+require_once "resources/sensor_reader/insertSensorReading.php";
+
 //app
 require_once "app.php";
 
