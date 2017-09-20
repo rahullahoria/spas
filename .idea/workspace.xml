@@ -94,10 +94,10 @@
         <entry file="file://$PROJECT_DIR$/api/resources/sensor_reader/insertSensorReading.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.5080214">
-              <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+              <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
               <folding>
                 <element signature="e#6#93#0#PHP" expanded="true" />
-                <marker date="1505898547452" expanded="true" signature="338:559" placeholder="INSERT INTO sensor... " />
+                <marker date="1505899061076" expanded="true" signature="338:561" placeholder="INSERT INTO `sensor-reader`.raw_readings... " />
               </folding>
             </state>
           </provider>
@@ -929,7 +929,13 @@
       <option name="project" value="LOCAL" />
       <updated>1505837303062</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="first">
+      <created>1505898580829</created>
+      <option name="number" value="00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1505898580829</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1362,10 +1368,10 @@
     <entry file="file://$PROJECT_DIR$/api/resources/sensor_reader/insertSensorReading.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5080214">
-          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
           <folding>
             <element signature="e#6#93#0#PHP" expanded="true" />
-            <marker date="1505898547452" expanded="true" signature="338:559" placeholder="INSERT INTO sensor... " />
+            <marker date="1505899061076" expanded="true" signature="338:561" placeholder="INSERT INTO `sensor-reader`.raw_readings... " />
           </folding>
         </state>
       </provider>
