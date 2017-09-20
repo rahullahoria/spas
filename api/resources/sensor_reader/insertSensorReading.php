@@ -17,7 +17,7 @@ function insertSensorReading(){
         die();
     }
 
-    $sql = "INSERT INTO sensor-reader.`raw_readings`
+    $sql = "INSERT INTO sensor-reader.raw_readings
                   (`val1`, `val2`, `val3`, `val4`, `sensor`, `creation`, `user_id`, `readtime`)
                   VALUES (:val1,:val2,:val3,:val4,:sensor,:creation,:userId,:readtime)";
 
